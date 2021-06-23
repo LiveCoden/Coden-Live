@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   {{course.name}} | Coden Live
+{% endblock title %}
+
+ 
+{% block header %}
+
+    <header class="mb-5" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: linear-gradient(148deg, rgb(33,35,35), rgb(18,128,176)), var(--bs-orange);padding-bottom: 2%;">
+        <div class="row d-flex flex-column" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="text-align: center;opacity: 0.80;margin-right: 0px;margin-left: 0px;">
+            <div class="col">
+                <h1><span style="color: #ebeff1;font-size: 42px;font-family: 'Allerta Stencil', sans-serif;margin: o;">{{course.name}}</span></h1>
+            </div>
+        </div>
+        <div class="row text-center d-flex flex-row justify-content-between align-items-stretch align-content-center align-self-center" style="padding-right: 2%;padding-left: 2%;">
+            <div class="col text-center d-flex flex-column justify-content-evenly align-items-center">
+                <div class="row">
+                    <div class="col"><span data-animation="animated fadeInLeft" style="font-family: roboto;color: rgb(0,240,255);font-size: 42px;">{{course.amount}}</span></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="left-h" data-animation="animated fadeInLeft" style="color: rgb(255,255,255);font-size: 19.5px;font-family: 'Open Sans', sans-serif;">{{course.teacher}}</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p data-animation="animated fadeInLeft" style="color: rgb(255,255,255);font-family: 'Roboto Condensed', sans-serif;font-size: 15px;"><em>{{course.description}}</em><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-center"><img src="{{course.icon.url}}" alt={{course.alt_text}}></div>
+            <div class="col-md-4 d-flex flex-column justify-content-center" style="text-align: center;">
+                <div class="w_shop_105_right_box" data-animation="animated fadeInRight">
+                    <ul style="font-size: 26px;">
+                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Different Modules</li>
+                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Hands on experience</li>
+                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Live projects</li>
+                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Weekly Assignments</li>
+                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Certification of completion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center d-flex justify-content-end align-items-start align-content-end">
+            <div class="col text-end"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" style="width: 112px;background: #208f8f;">Get Demo</button></div>
+            
+            
+
+  
+            <div class="col text-start"><button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" style="width: 112px;background: #208f8f;">Enroll Now</button></div>
+        </div>
+    </header>
+{% endblock header %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center row" >
+    {% include 'partials/alerts.html' %}
+
+</div>
+
+<div class="row d-flex flex-column" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 0.90;margin-right: 0px;padding-right: 2%;padding-left: 2%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
+    <div class="col">
+        <h1 style="color: var(--bs-white);text-align: left;margin-left: 2%;margin-bottom: 2%;">Course Content</h1>
+    </div>
+    <div class="col">
+        <div class="accordion" role="tablist" id="accordion-1" style="text-align: left;opacity: 0.70;">
+            
+            {% for module in course.content %}
+            <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
+                <h2 class="accordion-header" role="tab" style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-{{ forloop.counter }}" aria-expanded="true" aria-controls="accordion-1 .item-1" style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>{{module.name}}</strong><br></button></h2>
+                <div class="accordion-collapse collapse show item-{{ forloop.counter }}" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                        <ul>
+                            {% for submodule in module.submodules  %}
+                            <li style="color: white;font-family: 'Open Sans', sans-serif;margin-top: 1.5%;margin-bottom: 1.5%;">{{submodule}}<br></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}   
+           
+        </div>
+    </div>
+</div>
+
+
+<section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" class="features-blue" style="background: linear-gradient(23deg, rgb(33,35,35), rgb(18,128,176));">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Features</h2>
+        </div>
+        <div class="row features">
+            <div class="col-sm-6 col-md-4 item"><i class="fas fa-hand-holding-usd icon"></i>
+                <h3 class="name"><strong>Affordable Price</strong></h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><i class="fa fa-clock-o icon"></i>
+                <h3 class="name"><strong>Flexible Timings</strong></h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><i class="fas fa-chalkboard-teacher icon"></i>
+                <h3 class="name"><strong>Highly Skilled Mentors</strong></h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="{% url 'demo' %}" method="POST">
+            {% csrf_token %}
+
+            <input type="hidden" value="{{course.name}}" name="course">
+            <input type="hidden" value="{{course.id}}" name="id">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title text-center w-100 font-weight-bold">Subscribe</h4>
+            <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                  <i class="fas fa-user prefix grey-text"></i>
+                  <input type="text" id="form3"  name="name" class="form-control" required>
+                  <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                </div>
+        
+                <div class="md-form mb-4">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input type="email" id="form2" name="email" class="form-control" required>
+                  <label data-error="wrong" data-success="right" for="form2">Your email</label>
+                </div>
+
+                <div class="md-form mb-4">
+                    <i class="fas fa-phone prefix grey-text"></i>
+                    <input type="number" id="form2" name="phone" class="form-control" required>
+                    <label data-error="wrong" data-success="right" for="form2">Your Contact Number</label>
+                  </div>
+          
+        
+              </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-success">Send Query</button>
+          </div>
+      </div>
+    </form>
+    </div>
+  </div>
+{% endblock content %}
+
+

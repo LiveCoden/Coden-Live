@@ -1,0 +1,15 @@
+body{
+    background: url('../img/—Pngtree—texture\ geometric\ black\ background_930090.jpg');
+    overflow-x: hidden;
+}
+#login_bg{
+    background: url('../img/coden_logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+
+.alert{
+    width: 100%;
+}

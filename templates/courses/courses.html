@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+Courses | Coden Live
+    
+{% endblock title %}
+
+{% block tags %}
+
+  <meta name="title" content="Coden Live - Online certificate Courses 🎓 with Free Demo Class💻">
+  <meta name="description" content="Coden live offers wide variety of live courses to choose from. Whether it be programming, marketing or anything else, each course comprises of live interactive classes in small batches of 5-8 students">
+  <meta name="keywords" content="coden live, virtual den of coders, online coding courses, online courses with certificates free demo classes, online courses with credentials">
+  <meta name="author" content="Chetan Khanna, Arshdeep Singh, Maninder kaur">
+    
+    
+{% endblock tags %}
+
+{% block header %}
+
+<div class="row"><img src="{% static 'img/courses_header.png' %}" style="opacity: 0.62;"></div>
+
+    
+{% endblock header %}
+
+{% block content %}
+
+<div class="container text-center" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="margin-top: 10%;margin-bottom: 5%;">
+    <div class="row text-center d-flex justify-content-center align-items-center align-content-around" style="color: rgb(255, 255, 255);min-height: 4rem;">
+        
+        {% for course in courses %}
+        <div class="col col-xs-12 col-md-5" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="min-height: 100px;">
+            <div class="card" data-bss-hover-animate="pulse" style="margin-right: 25px;margin-left: 25px;background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
+                <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><img src="{{course.icon.url}}" style="width: 144px;height: 145px;">
+                    <h4 class="card-title" style="margin-top: 15px;margin-bottom: 15px;">Title</h4>
+                    <p class="card-text" style="min-height: 4rem;">{{course.description}}
+
+                    </p><a class="btn btn-secondary" href="{%  url 'course' course.id %}"  style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">See More</a>
+                </div>
+            </div>
+        </div> 
+       
+        {% endfor %}
+               
+    </div>
+</div>
+    
+
+{% endblock content %}
