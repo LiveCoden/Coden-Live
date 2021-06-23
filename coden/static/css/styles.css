@@ -1,6 +1,8 @@
 body{
     background: url('../img/—Pngtree—texture\ geometric\ black\ background_930090.jpg');
     overflow-x: hidden;
+    overflow: hidden;
+    width: 100%;
 }
 #login_bg{
     background: url('../img/coden_logo.png');
