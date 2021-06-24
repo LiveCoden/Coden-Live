@@ -84,15 +84,15 @@ WSGI_APPLICATION = 'coden.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'coden',
-        'USER': 'chetankhanna',
-        'PASSWORD': 'codeit',
-        'HOST': 'localhost'
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'coden',
+#         'USER': 'chetankhanna',
+#         'PASSWORD': 'codeit',
+#         'HOST': 'localhost'
+#     }
+# }
 
 
 
