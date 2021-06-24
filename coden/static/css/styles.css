@@ -10,9 +10,7 @@ body{
     background-size: auto;
     
 }
-*{
-    overflow-x: hidden;
-}
+
 .alert{
     width: 100%;
 }
@@ -20,17 +18,9 @@ body{
 body {
     overflow-x: hidden !important;
 }
-.section {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
 
-@media screen and (max-width: 1000px) {
-    body {
-        overflow-x: hidden !important;
-    }
-    .section {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
+.flow{
+
+    overflow-x: hidden !important;
+
 }
