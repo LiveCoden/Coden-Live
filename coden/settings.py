@@ -179,6 +179,7 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+#SMTP Configuration
 
 
 
