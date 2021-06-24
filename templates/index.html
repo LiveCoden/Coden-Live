@@ -16,6 +16,8 @@
 {% endblock tags %}
 
 {% block header %}
+<section>
+
 <div class="carousel slide" style="width: 100%;" data-bs-ride="carousel" id="carousel-1">
     <div class="carousel-inner">
         <div class="carousel-item active"><img class="w-100 d-block" src="{% static 'img/sliderfinal.png' %}" alt="Slide Image"></div>
@@ -27,10 +29,14 @@
         <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
     </ol>
 </div>
+</section>
+
 {% endblock header %}
 {% block content %}
 
 {% include 'partials/alerts.html' %}
+<section>
+
 <div class="container text-center"  data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="margin-top: 10%;margin-bottom: 5%;width:100%">
     <div class="row text-center d-flex justify-content-center" style="color: rgb(255, 255, 255);">
         
@@ -102,6 +108,8 @@
        
     </div>
 </div>
+</section>
+<section>
 
 <div class="row" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="width:100%; background: rgb(72,66,66);opacity: 0.70;margin-bottom: 5%;padding-right: 5%;padding-left: 5%;padding-bottom: 3%;padding-top: 3%;">
     <div class="col-md-4" style="transform: perspective(590px);">
@@ -157,6 +165,7 @@
         </div>
     </div>
 </div>
+</section>
 
 <section data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" class="team-boxed" style="background: rgb(72,66,66);opacity: 0.70;color: var(--bs-light);width:100%">
     <div class="container" style="text-align: center;">
@@ -192,6 +201,8 @@
         </div>
     </div>
 </section>
+<section>
+
 <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" data-aos-once="true" id="carousel-t" style="background: rgb(72,66,66);margin-top: 5%;opacity: 0.70;width:100%">
     <div class="carousel-inner" style="border-color: rgb(255,255,255);">
         <div class="carousel-item active">
@@ -226,6 +237,7 @@
         <li data-bs-target="#carousel-t" data-bs-slide-to="2"></li>
     </ol>
 </div>
+</section>
 
 <!-- <section class="mt-5" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="background: rgb(72,66,66);opacity: 0.70;color: var(--bs-light);">
 
