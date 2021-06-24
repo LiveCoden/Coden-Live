@@ -15,7 +15,7 @@ body{
     width: 100%;
 }
 
-body {
+html,body {
     overflow-x: hidden !important;
 }
 
@@ -24,3 +24,12 @@ body {
     overflow-x: hidden !important;
 
 }
+
+
+
+ .slide-content .scroller {
+  width: 1024px;
+}
+* {
+    outline: 1px solid #f00 !important;
+  }
