@@ -10,7 +10,9 @@ body{
     background-size: auto;
     
 }
-
+*{
+    overflow-y: hidden;
+}
 .alert{
     width: 100%;
 }
