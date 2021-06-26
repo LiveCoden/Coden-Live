@@ -4,8 +4,8 @@ from .models import Course
 
 class CourseAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'icon', 'description')
-    list_display_links = ('name',)
-    list_editable = ('description','id')
+    list_display_links = ('id', 'name')
+    list_editable = ('description',)
     search_fields = ('name',)
     list_per_page = 20
 
