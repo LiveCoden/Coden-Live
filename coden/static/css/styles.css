@@ -19,18 +19,13 @@ html,body {
     overflow-x: hidden !important;
 }
 
-.flow{
-
-    overflow-x: hidden !important;
-
-}
 
 
 
- .slide-content .scroller {
+ /* .slide-content .scroller {
   width: 1024px;
 }
  *{
     outline: 1px solid #f00 !important;
-  } 
+  }  */
 
