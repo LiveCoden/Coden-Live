@@ -19,8 +19,8 @@ jobs:
             python manage.py collectstatic --noinput
             python manage.py makemigrations
             python manage.py migrate
-            echo "${{ secrets.HOST }}" | sudo -S -k sudo systemctl restart gunicorn            
-            echo "${{ secrets.HOST }}" | sudo -S -k sudo systemctl restart nginx            
+            echo ${{ secrets.PW }} | sudo -S -k sudo systemctl restart gunicorn            
+            echo ${{ secrets.PW }} | sudo -S -k sudo systemctl restart nginx            
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           key: ${{ secrets.KEY}}
