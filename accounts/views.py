@@ -6,9 +6,14 @@ from django.contrib.auth.password_validation import validate_password,password_v
 def register(request):
 
     context ={
-        "pass" : password_validators_help_texts()
     }
     if request.method == 'POST':
+
+        context ={
+            "value" : request.POST,
+    } 
+
+        print(request.POST)
         # Register user
 
         # Get form values
@@ -25,13 +30,13 @@ def register(request):
             # Check username
             if User.objects.filter(username=username).exists():
                 messages.error(request, 'Username already in use')
-                return redirect('register')
+                return render(request, 'accounts/register.html', context)
             else:
                 # Check email
                 
                 if User.objects.filter(email=email).exists():
                     messages.error(request, 'Email address already in use')
-                    return redirect('register')
+                    return render(request, 'accounts/register.html', context)
                 else:
 
                     validate = None
@@ -46,7 +51,7 @@ def register(request):
                         
                     print(validate)
                     if validate is not None:
-                        return redirect('register')
+                        return render(request, 'accounts/register.html', context)
                     else:    
                     
                         # Successful Registration
@@ -57,7 +62,7 @@ def register(request):
                         user.save()
                         messages.success(
                             request, 'You are now registered and can log in')
-                        return redirect('login')
+                        return render(request, 'accounts/register.html', context)
 
                     # Login after Register
                     # auth.login(request, user)
@@ -65,7 +70,7 @@ def register(request):
                     # return redirect('login')
         else:
             messages.error(request, 'Passwords do not match')
-            return redirect('register')
+            return render( request,'accounts/register.html',context)
     else:
         return render(request, 'accounts/register.html', context)
 def login(request):
