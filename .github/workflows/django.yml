@@ -1,17 +1,22 @@
-name: remote ssh command
-on: [push]
+name: test
+on:
+  push:
+    branches:
+    - main
+
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: executing remote ssh commands using ssh key
-      uses: appleboy/ssh-action@master
-      with:
-        host: 165.232.185.199
-        port: 80
-        username: djangoadmin
-        key: ${{ secrets.KEY}}
-      
-        script: |
-          cd pyapps
+      - name: ls -a via OPEN SSH Private Key
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            cd /tmp
+            ls -a
+            
+          host: 165.232.185.199
+          user: djangoadmin
+          key: ${{ secrets.KEY}}
+#          pass: ${{ secrets.PASS }}
+          args: "-tt -vvv"
