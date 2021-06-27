@@ -16,6 +16,7 @@ jobs:
             source venv/bin/activate
             cd Coden-Live
             git pull
+            python manage.py collectstatic --noinput
             echo "dencodlive" | sudo -S -k sudo systemctl restart gunicorn            
             echo "dencodlive" | sudo -S -k sudo systemctl restart nginx            
           host: 165.232.185.199
