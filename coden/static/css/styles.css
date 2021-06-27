@@ -47,8 +47,52 @@ html,body {
 
 
 
-.course-info{
-    background-color: aliceblue;
-    padding: 2%;
-    margin-bottom: 2%;
-} 
+ .course-info {
+    background: #184e8e;
+    opacity: 0.8;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+  }
+  
+.course-info h5 {
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .course-details .course-info p {
+    margin: 0;
+    font-size: 12px;
+
+    font-weight: 500;
+  }
+  
+  .course-info a {
+    color: white;
+  }
+  
+  .course-des{
+      background-color: rgb(56,61,67);
+      padding: 1%;
+      border-radius: 10px;
+      opacity: 0.8;
+      min-height: 220px;
+  }
+
+  .img-fluid{
+    width: 450px;
+  }
+  @media only screen and (min-width: 780px) and (max-width:1020px) {
+    .img-fluid{
+      width: 500px
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .img-fluid{
+      width: 100%
+    }
+  }
+  
