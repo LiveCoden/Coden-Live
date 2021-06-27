@@ -17,6 +17,8 @@ jobs:
             cd Coden-Live
             git pull
             python manage.py collectstatic --noinput
+            python manage.py makemigrations
+            python manage.py migrate
             echo "dencodlive" | sudo -S -k sudo systemctl restart gunicorn            
             echo "dencodlive" | sudo -S -k sudo systemctl restart nginx            
           host: 165.232.185.199
