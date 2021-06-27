@@ -3,6 +3,8 @@ on:
   push:
     branches:
     - main
+env:
+  PW: dencodlive
 
 jobs:
   build:
@@ -19,8 +21,8 @@ jobs:
             python manage.py collectstatic --noinput
             python manage.py makemigrations
             python manage.py migrate
-            echo ${{ secrets.PW }} | sudo -S -k sudo systemctl restart gunicorn            
-            echo ${{ secrets.PW }} | sudo -S -k sudo systemctl restart nginx            
+            echo "env_var:$PW" | sudo -S -k sudo systemctl restart gunicorn            
+            echo "env_var:$PW" sudo -S -k sudo systemctl restart nginx            
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           key: ${{ secrets.KEY}}
