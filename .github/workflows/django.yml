@@ -12,7 +12,10 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            mkdir b
+            cd pyapps
+            source venv/bin/activate
+            cd Coden-Live
+            git pull
             
           host: 165.232.185.199
           user: djangoadmin
