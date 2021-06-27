@@ -4,7 +4,7 @@ on:
     branches:
     - main
 env:
-  PW: dencodlive
+  PW: ${{ secrets.PW}}
 
 jobs:
   build:
