@@ -7,48 +7,54 @@
  
 {% block header %}
 
-        <div class="row d-flex flex-column mb-5" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="text-align: center;opacity: 0.80;margin-right: 0px;margin-left: 0px;">
-            <div class="col">
-                <h1><span style="color: #ebeff1;font-size: 42px;font-family: 'Allerta Stencil', sans-serif;margin: o;">{{course.name}}</span></h1>
-            </div>
-        </div>
-        <div class="row text-center d-flex flex-row justify-content-between align-items-stretch align-content-center align-self-center" style="padding-right: 2%;padding-left: 2%;">
-            <div class="col text-center d-flex flex-column justify-content-evenly align-items-center">
-                <div class="row">
-                    <div class="col"><span data-animation="animated fadeInLeft" style="font-family: roboto;color: rgb(0,240,255);font-size: 42px;">{{course.amount}}</span></div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h1 class="left-h" data-animation="animated fadeInLeft" style="color: rgb(255,255,255);font-size: 19.5px;font-family: 'Open Sans', sans-serif;">{{course.teacher}}</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p data-animation="animated fadeInLeft" style="color: rgb(255,255,255);font-family: 'Roboto Condensed', sans-serif;font-size: 15px;"><em>{{course.description}}</em><br></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center align-content-center"><img src="{{course.icon.url}}" alt={{course.alt_text}} style="width: 200px;height: 202x;"></div>
-            <div class="col-md-4 d-flex flex-column justify-content-center" style="text-align: center;">
-                <div class="w_shop_105_right_box" data-animation="animated fadeInRight">
-                    <ul class="course_ul" style="font-size: 3vw;" >
-                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Different Modules</li>
-                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Hands on experience</li>
-                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Live projects</li>
-                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Weekly Assignments</li>
-                        <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Certification of completion</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center d-flex justify-content-end align-items-start align-content-end">
-            <div class="col text-end"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" style="width: 112px;background: #208f8f;">Get Demo</button></div>
-            
-            
 
+
+            <!-- ======= Cource Details Section ======= -->
+    <section id="course-details" class="course-details  p-4">
+            <h3 class="text-center mb-4" style="color: white;" >{{course.name}}</h3>
+
+          <div class="row d-flex align-items-center ">
+
+
+
+
+<div class="col-12 col-md-4 order-3 order-md-1">
+    <p>
+        {{course.description}}
+      </p>
+</div>
+<div class="col-12 col-md-4 order-1 order-md-2">
+    <img src="{{course.icon.url}}" class="img-fluid" alt="">
+
+</div>
+<div class="col-12 col-md-4 order-2 order-md-3 ">
+
+    <div class="course-info d-flex justify-content-between align-items-center">
+        <h5>Trainer</h5>
+        <p><a href="#">Walter White</a></p>
+      </div>
+
+      <div class="course-info d-flex justify-content-between align-items-center">
+        <h5>Course Fee</h5>
+        <p>$165</p>
+      </div>
+
+      <div class="course-info d-flex justify-content-between align-items-center">
+        <h5>Available Seats</h5>
+        <p>30</p>
+      </div>
+
+      <div class="course-info d-flex justify-content-between align-items-center">
+        <h5>Schedule</h5>
+        <p>5.00 pm - 7.00 pm</p>
+      </div>
+
+</div>
+
+         </div>
+      </section>
+      <!-- End Cource Details Section -->
   
-            <div class="col text-start"><button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" style="width: 112px;background: #208f8f;">Enroll Now</button></div>
-        </div>
 {% endblock header %}
 
 {% block content %}
