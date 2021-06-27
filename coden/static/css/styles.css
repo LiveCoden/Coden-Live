@@ -97,6 +97,10 @@ html,body {
     }
   }
   
- .course-header{
-     height: 40vw;
- }
+  .header
+  {
+   height: 40vw !important;
+  
+   
+
+  }
