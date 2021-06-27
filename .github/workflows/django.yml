@@ -16,7 +16,8 @@ jobs:
             source venv/bin/activate
             cd Coden-Live
             git pull
-            
+            echo "dencodlive" | sudo -S -k sudo systemctl restart gunicorn            
+            echo "dencodlive" | sudo -S -k sudo systemctl restart nginx            
           host: 165.232.185.199
           user: djangoadmin
           key: ${{ secrets.KEY}}
