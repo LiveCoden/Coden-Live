@@ -74,7 +74,8 @@ html,body {
   }
   
   .course-des{
-      background-color: #184e8e;
+      background-color: rgb(56,61,67);
+      font-size: 18px;
       padding: 0.5%;
       border-radius: 10px;
       opacity: 0.8;
@@ -103,10 +104,4 @@ html,body {
   
    
 
-  }
-
-  .xyz{
-    width: 85%;
-    text-align: center;
-    margin: 0 auto;
   }
