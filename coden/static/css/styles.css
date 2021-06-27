@@ -40,7 +40,13 @@ html,body {
 
  .setcard{
 
-    min-height: 10rem;
-    max-height: 12rem;
+    min-height: 6rem;
+    max-height: 8rem;
+
+ }
+
+ .course_ul{
+
+    list-style-position: inside;
 
  }

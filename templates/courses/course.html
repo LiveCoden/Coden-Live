@@ -7,8 +7,7 @@
  
 {% block header %}
 
-    <header class="mb-5" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: linear-gradient(148deg, rgb(33,35,35), rgb(18,128,176)), var(--bs-orange);padding-bottom: 2%;">
-        <div class="row d-flex flex-column" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="text-align: center;opacity: 0.80;margin-right: 0px;margin-left: 0px;">
+        <div class="row d-flex flex-column mb-5" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="text-align: center;opacity: 0.80;margin-right: 0px;margin-left: 0px;">
             <div class="col">
                 <h1><span style="color: #ebeff1;font-size: 42px;font-family: 'Allerta Stencil', sans-serif;margin: o;">{{course.name}}</span></h1>
             </div>
@@ -32,7 +31,7 @@
             <div class="col-md-4 d-flex flex-column justify-content-center align-items-center align-content-center"><img src="{{course.icon.url}}" alt={{course.alt_text}} style="width: 200px;height: 202x;"></div>
             <div class="col-md-4 d-flex flex-column justify-content-center" style="text-align: center;">
                 <div class="w_shop_105_right_box" data-animation="animated fadeInRight">
-                    <ul style="font-size: 3vw;" >
+                    <ul class="course_ul" style="font-size: 3vw;" >
                         <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Different Modules</li>
                         <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Hands on experience</li>
                         <li data-animation="animated fadeInRight" style="font-family: 'Allerta Stencil', sans-serif;color: rgb(255,255,255);">Live projects</li>
@@ -50,7 +49,6 @@
   
             <div class="col text-start"><button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" style="width: 112px;background: #208f8f;">Enroll Now</button></div>
         </div>
-    </header>
 {% endblock header %}
 
 {% block content %}
