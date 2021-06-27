@@ -10,7 +10,7 @@ jobs:
       with:
         host: 165.232.185.199
         username: djangoadmin
-        key: ${{ secrets.PRIVATE_KEY }}
-        port: 90
+        key: ${{ secrets.KEY}}
+        port: 80
         script: |
           cd pyapps
