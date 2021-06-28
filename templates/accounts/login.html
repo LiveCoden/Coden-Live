@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+
+{% block title %}
+
+Login | Coden Live
+    
+{% endblock title %}
+
+{% block content %}
+
+{% include 'partials/alerts.html' %}
+
+<div class="container xyz">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-12 col-xl-10">
+                <div class="card shadow-lg o-hidden border-0 my-5" style="background: rgba(255,255,255,0);">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-flex">
+                                <div class="flex-grow-1 bg-login-image" id="login_bg" ></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="display-5 text-white mb-4">Welcome Back!</h1>
+                                    </div>
+                                    <form method="POST" action="{% url 'login' %}" class="user">
+                                        {% csrf_token %}
+                                        <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Username" name="username"></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Password" name="password"></div>
+                                        <div class="mb-3">
+                                           
+                                        </div><button class="btn btn-primary d-block btn-user w-100" type="submit" style="background: linear-gradient(-93deg, #7c07a3 40%, #c448ec);">Login</button>
+                                        <hr><a href="{% provider_login_url 'google' %}" class="btn btn-primary d-block btn-google btn-user w-100 mb-2" role="button"><i class="fab fa-google"></i>&nbsp; Login with Google</a>
+                                        <hr>
+                                    </form>
+                                    <div class="text-center"><a class="small" href="{% url 'reset_password' %}">Forgot Password?</a></div>
+                                    <div class="text-center"><a class="small" href="{% url 'register' %}">Create an Account!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>{% endblock content %}
