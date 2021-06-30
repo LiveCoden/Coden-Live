@@ -69,12 +69,12 @@
         <h1 style="color: var(--bs-white);text-align: left;margin-left: 2%;margin-bottom: 2%;">Course Content</h1>
     </div>
     <div class="col">
-        <div class="accordion" role="tablist" id="accordion-1" style="text-align: left;opacity: 0.70;">
+        <div class="accordion" role="tablist" id="accordion-2" style="text-align: left;opacity: 0.70;">
             
             {% for module in course.content %}
             <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
-                <h2 class="accordion-header" role="tab" style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-{{ forloop.counter }}" aria-expanded="true" aria-controls="accordion-1 .item-1" style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>{{module.name}}</strong><br></button></h2>
-                <div class="accordion-collapse collapse show item-{{ forloop.counter }}" role="tabpanel" data-bs-parent="#accordion-1">
+                <h2 class="accordion-header" role="tab" style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-{{ forloop.counter }}" aria-expanded="true" aria-controls="accordion-1 .item-1" style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>{{module.name}}</strong><br></button></h2>
+                <div class="accordion-collapse collapse show item-{{ forloop.counter }}" role="tabpanel" data-bs-parent="#accordion-2">
                     <div class="accordion-body">
                         <ul>
                             {% for submodule in module.submodules  %}
