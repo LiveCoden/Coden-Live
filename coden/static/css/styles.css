@@ -98,46 +98,42 @@ html,body {
     }
   }
   
-  .header
-  {
-   height: 40vw !important;
   
-   
-
-  }
-
 
   .main-card-text{
 
-    min-height: 78px;
+    min-height: 50px;
   }
 
-  /* @media only screen and (max-width: 1024px) {
-    p{
-      font-size: .5rem ;
-
-    }
-    h1{
-        font-size: 3rem;
-    }
-    h2{
-        font-size: 2rem;
-    } 
-    h3{
-        font-size: 1.7rem;
-    }
-    h4{
-        font-size: 1.5rem;
-    }
-    h5{
-        font-size: 1.2rem;
-    }
-    h6{
-        font-size: 1rem;
-    }
-  } */
 
 
   .main-card-icon{
   font-size: 91px;color: rgba(23,187,158,0.69);
+  }
+
+
+  .main-card-title{
+    margin-top: 15px;margin-bottom: 15px;
+  }
+
+  @media only screen and (min-width: 1300px) {
+
+    .main-card-text{
+
+      min-height: 50px;
+      font-size: 20px;
+    }
+  
+  
+  
+    .main-card-icon{
+    font-size: 111px;color: rgba(23,187,158,0.69);
+    }
+  
+  
+    .main-card-title{
+      font-size: 40px;
+      margin-top: 15px;margin-bottom: 15px;
+    }
+  
   }

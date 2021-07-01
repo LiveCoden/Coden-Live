@@ -38,7 +38,7 @@ Home | Coden Live
 {% block content %}
 
 {% include 'partials/alerts.html' %}
-<div class="container text-center flow" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
+<div class=" text-center flow" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
     style="margin-top: 10%;margin-bottom: 5%;">
     <div class="row text-center d-flex justify-content-around" style="color: rgb(255, 255, 255);">
 
@@ -47,8 +47,8 @@ Home | Coden Live
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-book-reader" ></i>
-                    <h4 class="card-title main-card-title" style="margin-top: 15px;margin-bottom: 15px;">Courses</h4>
-                    <p class="card-text main-card-text" style="min-height: 78px;">From basic to advanced. All courses
+                    <h4 class="card-title main-card-title" >Courses</h4>
+                    <p class="card-text main-card-text">From basic to advanced. All courses
                         are available here</p>
                     <a href="{% url 'courses' %}">
                         <button class="btn btn-secondary" type="button"
@@ -64,7 +64,7 @@ Home | Coden Live
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-laptop-code" ></i>
-                    <h4 class="card-title main-card-title" style="margin-top: 15px;margin-bottom: 15px;">Compiler</h4>
+                    <h4 class="card-title main-card-title">Compiler</h4>
                     <p class="card-text main-card-text">Compiler support for students testing their code</p>
                     <a href="{% url 'compiler' %}">
                         <button class="btn btn-secondary" type="button"
@@ -81,7 +81,7 @@ Home | Coden Live
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-blog" ></i>
-                    <h4 class="card-title main-card-title" style="margin-top: 15px;margin-bottom: 15px;">Blogs</h4>
+                    <h4 class="card-title main-card-title">Blogs</h4>
                     <p class="card-text main-card-text">Students can share their knowledge through our blogs</p>
                     <a href="{% url 'courses' %}">
 
@@ -100,7 +100,7 @@ Home | Coden Live
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-chalkboard-teacher" ></i>
-                    <h4 class="card-title main-card-title" style="margin-top: 15px;margin-bottom: 15px;">Q n A</h4>
+                    <h4 class="card-title main-card-title">Q n A</h4>
                     <p class="card-text main-card-text">24/7 doubt solving on mail and whatsapp&nbsp;</p>
 
                     <a {% if user.is_authenticated %} href="mailto:livecoden@gmail.com" {% else %}
