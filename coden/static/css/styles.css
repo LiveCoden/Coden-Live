@@ -116,6 +116,20 @@ html,body {
     margin-top: 15px;margin-bottom: 15px;
   }
 
+
+.main-prom-text{
+
+font-size: 18px;
+
+}
+
+.main-icon-prom{
+  margin-right: 14px;font-size: 25px;color: var(--bs-pink);
+}
+
+.main-prom-col-text{
+  font-size: 25px;
+}
   @media only screen and (min-width: 1300px) {
 
     .main-card-text{
@@ -135,5 +149,32 @@ html,body {
       font-size: 40px;
       margin-top: 15px;margin-bottom: 15px;
     }
+
+    .main-prom-text{
+
+      font-size: 26px;
+      
+      }
+
+      .main-icon-prom{
+        margin-right: 14px;font-size: 35px;color: var(--bs-pink);
+      }
+      
+      .main-prom-col-text{
+        font-size: 35px;
+      }
+  
+  }
+
+ 
+  @media only screen and (min-width: 500px) and (max-width:790px) {
+
+    .main-card-text{
+
+      min-height: 80px;
+      font-size: 15px;
+
+    }
+  
   
   }
