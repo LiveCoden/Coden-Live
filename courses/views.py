@@ -12,7 +12,7 @@ def index(request):
 
 def course(request, course_name):
 
-    course = get_object_or_404(Course, name=course_name)
+    course = get_object_or_404(Course, url_name=course_name)
     context = {
         'course': course
     }
