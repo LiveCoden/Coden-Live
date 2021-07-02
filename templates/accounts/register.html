@@ -20,7 +20,6 @@ Register | Coden Live
                             <h6 class="display-5 text-white mb-4">Create an Account!</h6>
                         </div>
                         {% include 'partials/alerts.html' %}
-                        
                         <form method="POST" action="{% url 'register' %}" class="user">
                             {% csrf_token %}
                             <div class="row mb-3">
