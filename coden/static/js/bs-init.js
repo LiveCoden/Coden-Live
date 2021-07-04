@@ -23,3 +23,40 @@ setTimeout(function() {
 
 
   
+
+  $("#features").attr("data-aos","flip-down")
+
+// course accordian animation fix
+let ca = document.getElementsByClassName('course-accordian')
+let cae = ca[ca.length-1]
+console.log(cae)
+  $('#accordion-2').on('hidden.bs.collapse', function (e) {
+	if(e.target == cae)
+	{
+		$("#features").attr("data-aos","")
+		$("#footer").attr("data-aos","")
+		$('#features').show()
+		$('#footer').show()
+		
+		// $("#features").attr("data-aos","flip-down")
+		// $("#footer").attr("data-aos","flip-down")
+
+		console.log($('#features'))
+	}
+})
+
+
+$('#accordion-2').on('shown.bs.collapse', function (e) {
+	if(e.target == cae)
+	{
+		// $("#features").attr("data-aos","")
+		// $("#footer").attr("data-aos","")
+		// $('#features').show()
+		// $('#footer').show()
+		
+		// $("#features").attr("data-aos","flip-down")
+		// $("#footer").attr("data-aos","flip-down")
+
+		console.log($('#features'))
+	}
+})
