@@ -740,11 +740,10 @@ var bashSource = "echo \"hello, world\"";
 var basicSource = "PRINT \"hello, world\"";
 
 var cSource = "\
-// Powered by Judge0\n\
 #include <stdio.h>\n\
 \n\
 int main(void) {\n\
-    printf(\"Hello Judge0!\\n\");\n\
+    printf(\"Hello Coden Live!\\n\");\n\
     return 0;\n\
 }\n\
 ";
