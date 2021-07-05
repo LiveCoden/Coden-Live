@@ -20,10 +20,10 @@ Home | Coden Live
 
 <div class="carousel slide flow" data-bs-ride="carousel" id="carousel-1">
     <div class="carousel-inner">
-        <div class="carousel-item active"><img class="w-100 d-block" src="{% static 'img/Online courses coden live.png' %}" 
-                alt="coden live slider-1"></div>
-        <div class="carousel-item"><img class="w-100 d-block" src="{% static 'img/Learn coding online with coden live.jpg' %}"
-                alt="coden live slider-2"></div>
+        <div class="carousel-item active"><img class="w-100 d-block"
+                src="{% static 'img/Online courses coden live.png' %}" alt="coden live slider-1"></div>
+        <div class="carousel-item"><img class="w-100 d-block"
+                src="{% static 'img/Learn coding online with coden live.jpg' %}" alt="coden live slider-2"></div>
     </div>
     <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span
                 class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a
@@ -105,7 +105,7 @@ Home | Coden Live
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-chalkboard-teacher"></i>
                     <h4 class="card-title main-card-title">Q n A</h4>
-                    <p class="card-text main-card-text">24/7 doubt solving  with professional TAs</p>
+                    <p class="card-text main-card-text">24/7 doubt solving with professional TAs</p>
 
                     <a {% if user.is_authenticated %} href="mailto:livecoden@gmail.com" {% else %}
                         href="{% url 'login' %}" {% endif %}>
@@ -148,27 +148,24 @@ Home | Coden Live
         </div>
     </div>
     <div class="col-md-6" style="color: var(--bs-pink);flex-direction:column">
-        <div class="row gy-6   cont" >
+        <div class="row gy-6   cont">
             <div class="col col-12   cont" style="margin-top: 8%;">
 
-                <i class="fas main-icon-prom fa-code d-inline-block"
-                    ></i>
+                <i class="fas main-icon-prom fa-code d-inline-block"></i>
                 <p class="d-inline-block main-prom-col-text">Promoting Coding Culture</p>
 
 
             </div>
         </div>
         <div class="row gy-6 ">
-            <div class="col col-12 cont " style="margin-top: 8%;"
-            ><i class="fas main-icon-prom fa-video d-inline-block"
-                   ></i>
+            <div class="col col-12 cont " style="margin-top: 8%;"><i
+                    class="fas main-icon-prom fa-video d-inline-block"></i>
                 <p class="d-inline-block main-prom-col-text">Regular Webinars</p>
             </div>
         </div>
         <div class="row gy-6">
             <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas main-icon-prom fa-check d-inline-block"
-                ></i>
+                <i class="fas main-icon-prom fa-check d-inline-block"></i>
                 <p class="d-inline-block main-prom-col-text">Learning from Basics</p>
             </div>
         </div>
@@ -176,22 +173,19 @@ Home | Coden Live
     <div class="col-md-6 text-start">
         <div class="row gy-6">
             <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas main-icon-prom fa-chalkboard-teacher d-inline-block"
-                    ></i>
-                <p class="d-inline-block main-prom-col-text" >Instant Doubt Solving</p>
+                <i class="fas main-icon-prom fa-chalkboard-teacher d-inline-block"></i>
+                <p class="d-inline-block main-prom-col-text">Instant Doubt Solving</p>
             </div>
         </div>
         <div class="row gy-6">
             <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas main-icon-prom fa-file-code d-inline-block"
-                  ></i>
-                <p class="d-inline-block main-prom-col-text" >Compiler Support</p>
+                <i class="fas main-icon-prom fa-file-code d-inline-block"></i>
+                <p class="d-inline-block main-prom-col-text">Compiler Support</p>
             </div>
         </div>
         <div class="row gy-6">
             <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas fa-user-check main-icon-prom d-inline-block"
-                   ></i>
+                <i class="fas fa-user-check main-icon-prom d-inline-block"></i>
                 <p class="d-inline-block main-prom-col-text">Best in Class Mentors</p>
             </div>
         </div>
@@ -208,7 +202,8 @@ Home | Coden Live
         <div class="row text-center d-flex flex-row justify-content-center align-items-center align-content-center align-self-center people"
             style="text-align: center;">
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="{% static 'img/arshdeep singh.jpg' %}" alt="Co-founder coden live arshdeep singh">
+                <div class="box"><img class="rounded-circle" src="{% static 'img/arshdeep singh.jpg' %}"
+                        alt="Co-founder coden live arshdeep singh">
                     <h3 class="name" style="color: #2a1f1f;">Arshdeep Singh</h3>
                     <p class="title">Co-founder</p>
                     <p class="description">Digital Marketer/Researcher, with an aim of building and implementing
@@ -218,19 +213,20 @@ Home | Coden Live
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle"  src="{% static 'img/maninder kaur.jpg' %}" alt="Co-founder coden live maninder kaur"
+                <div class="box"><img class="rounded-circle" src="{% static 'img/maninder kaur.jpg' %}"
+                        alt="Co-founder coden live maninder kaur"
                         style="text-align: justify;margin-right: 0;height: 160px;width: 150px;">
                     <h3 class="name" style="color: #2a1f1f;">Maninder Kaur</h3>
                     <p class="title"><strong>CO-FOUNDER</strong></p>
                     <p class="description">Dedicated and efficient full stack developer with a passion of developing
                         scalable web applications</p>
-                    <div class="social"><a href="#"><i class="fas fa-envelope" ></i></a><a href="#"><i
+                    <div class="social"><a href="#"><i class="fas fa-envelope"></i></a><a href="#"><i
                                 class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-github"></i></a></div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="{% static 'img/chetan khanna.jpg' %}" alt="Co-founder coden live Chetan Khanna"
-                        style="transform: scaleX(-1);">
+                <div class="box"><img class="rounded-circle" src="{% static 'img/chetan khanna.jpg' %}"
+                        alt="Co-founder coden live Chetan Khanna" style="transform: scaleX(-1);">
                     <h3 class="name" style="color: #2a1f1f;">Chetan Khanna</h3>
                     <p class="title"><strong>CO-FOUNDER</strong></p>
                     <p class="description">Proficient software developer and a competitive programmer with a passion for
@@ -248,7 +244,8 @@ Home | Coden Live
     <div class="carousel-inner" style="border-color: rgb(255,255,255);">
         <div class="carousel-item active">
             <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle"
-                    src="{% static 'img/testimonial1.jpg' %}" alt="testimonial-1" width="100" style="height: 100px;width: 100px;">
+                    src="{% static 'img/testimonial1.jpg' %}" alt="testimonial-1" width="100"
+                    style="height: 100px;width: 100px;">
                 <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
                 <p class="text-center" style="padding-right: 5%;padding-left: 5%;">I enrolled in Web Development using
                     ReactJs course in this lockdown. It was ‘fantastic’ , the learning curve increased exponentially.
@@ -301,17 +298,21 @@ Home | Coden Live
         </h2>
     </div>
     <div class="col">
-        <div class="accordion" role="tablist" id="accordion-1" style="text-align: left;opacity: 0.70;">
 
-            <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
-                <div class="accordion-header" role="tab"
-                    style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button
-                        class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1"
-                        aria-expanded="true" aria-controls="accordion-1 .item-1"
-                        style="opacity: 1;color: white;background: rgb(56,61,67);">
+
+        <div class="accordion" id="main-accordian">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading-1">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#item-1"
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+
                         <strong>What is coden live?
-                        </strong><br></button></div>
-                <div class="accordion-collapse collapse  main-accordian item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                        </strong>
+                        <span class="glyphicon glyphicon-plus"></span>
+
+                    </button>
+                </h2>
+                <div id="item-1" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-heading-1">
                     <div class="accordion-body">
                         <p>
                             Coden Live is an e - learning platform which offers wide variety of online live courses to
@@ -319,21 +320,20 @@ Home | Coden Live
                             worry about anything, it’s a one stop solution portal for all programming geeks out there.
                             We make sure that our students should get best learning experience that’s why we provide
                             flexible, affordable and job relevant online training to young individuals.
-
                         </p>
                     </div>
                 </div>
             </div>
-
-            <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
-                <div class="accordion-header" role="tab"
-                    style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button
-                        class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2"
-                        aria-expanded="true" aria-controls="accordion-1 .item-2"
-                        style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>What is a live course?
-                        </strong><br></button>
-                    </div>
-                <div class="accordion-collapse collapse  main-accordian item-2" role="tabpanel" data-bs-parent="#accordion-1">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item-2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <strong>
+                            What is a live course?
+                        </strong>
+                    </button>
+                </h2>
+                <div id="item-2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-2">
                     <div class="accordion-body">
                         <p>
                             We at Coden live focus on this concept of live courses, where our mentors will interact with
@@ -342,21 +342,16 @@ Home | Coden Live
                     </div>
                 </div>
             </div>
-
-
-
-
-            <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
-                <div class="accordion-header" role="tab"
-                    style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button
-                        class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3"
-                        aria-expanded="true" aria-controls="accordion-1 .item-3"
-                        style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>What’s the average batch size
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading-3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item-3" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <strong>What’s the average batch size
                             of live courses at coden live?
 
-                        </strong><br></button>
-                    </div>
-                <div class="accordion-collapse collapse  main-accordian item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                        </strong> </button>
+                </h2>
+                <div id="item-3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-3">
                     <div class="accordion-body">
                         <p>
                             For better understanding and personal interaction with students, we at Coden live maintain
@@ -366,41 +361,16 @@ Home | Coden Live
             </div>
 
 
-
-
-            <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
-                <div class="accordion-header" role="tab"
-                    style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button
-                        class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4"
-                        aria-expanded="true" aria-controls="accordion-1 .item-4"
-                        style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>What is the duration of
-                            courses at coden live?
-
-
-                        </strong><br></button>
-                    </div>
-                <div class="accordion-collapse collapse  main-accordian main-accordian item-4" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p>
-                            It totally depends upon course to course but generally the average duration of all live
-                            courses at coden live is of 2 months.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
-                <div class="accordion-header" role="tab"
-                    style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button
-                        class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5"
-                        aria-expanded="true" aria-controls="accordion-1 .item-5"
-                        style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>What is the duration of each
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading-4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item-4" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <strong>What is the duration of each
                             class?
 
-                        </strong><br></button>
-                    </div>
-                <div class="accordion-collapse collapse  main-accordian item-5" role="tabpanel" data-bs-parent="#accordion-1">
+                        </strong> </button>
+                </h2>
+                <div id="item-4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-4">
                     <div class="accordion-body">
                         <p>
                             Duration of each class would be 1hr, it can stretch up to 1.5hr at max.
@@ -411,17 +381,16 @@ Home | Coden Live
             </div>
 
 
-            <div class="accordion-item" style="margin: 0;margin-bottom: 4%;background: transparent;">
-                <div class="accordion-header" role="tab"
-                    style="background: rgb(186,169,169);opacity: 1;color: var(--bs-pink);"><button
-                        class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-6"
-                        aria-expanded="true" aria-controls="accordion-1 .item-6"
-                        style="opacity: 1;color: white;background: rgb(56,61,67);"><strong>How to get a demo class?
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading-5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item-5" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <strong>How to get a demo class?
 
 
-                        </strong><br></button>
-                    </div>
-                <div class="accordion-collapse collapse  main-accordian item-6" role="tabpanel" data-bs-parent="#accordion-1">
+                        </strong> </button>
+                </h2>
+                <div id="item-5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-5">
                     <div class="accordion-body">
                         <p>
                             You can fill up this form below to get your free demo class.
@@ -430,6 +399,11 @@ Home | Coden Live
                     </div>
                 </div>
             </div>
+
+
+
+
+
         </div>
     </div>
 </div>
