@@ -33,23 +33,29 @@ console.log(cae)
   $('#accordion-2').on('hidden.bs.collapse', function (e) {
 	if(e.target == cae)
 	{
+		// $("#course").attr("data-aos","")
+
 		$("#features").attr("data-aos","")
 		$("#footer").attr("data-aos","")
+		
 		$('#features').show()
 		$('#footer').show()
 		
 		// $("#features").attr("data-aos","flip-down")
 		// $("#footer").attr("data-aos","flip-down")
 
-		console.log($('#features'))
+		console.log($('#cae.id'))
 	}
 })
 
+$("#course").attr("data-aos","")
 
+$("#features").attr("data-aos","")
+$("#footer").attr("data-aos","")
 $('#accordion-2').on('shown.bs.collapse', function (e) {
 	if(e.target == cae)
 	{
-		// $("#features").attr("data-aos","")
+		// $("#features").attr("data-aos","flip-down")
 		// $("#footer").attr("data-aos","")
 		// $('#features').show()
 		// $('#footer').show()
