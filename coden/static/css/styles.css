@@ -187,7 +187,7 @@ font-size: 18px;
   .accordion-button,.collapsed{
     opacity: 0.9;
     color:  white !important;
-    background: rgba(23,187,158,0.4) !important;
+    background:linear-gradient(23deg, rgb(18,128,176), rgb(33,35,35))!important;
   }
 
   .accordion-body{
