@@ -185,9 +185,9 @@ font-size: 18px;
     margin-bottom: 3%;
   }
   .accordion-button,.collapsed{
-    opacity: 0.7;
+    opacity: 0.9;
     color:  white !important;
-    background: rgba(23,187,158,0.69) !important;
+    background: rgba(23,187,158,0.4) !important;
   }
 
   .accordion-body{
