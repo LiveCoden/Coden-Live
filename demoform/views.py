@@ -28,7 +28,7 @@ def index(request):
    
 
         send_mail(
-           subject= 'Subject here',
+           subject= 'Regrading Course Demo',
             html_message= html_message,
             message=plain_message,
             from_email= 'livecoden@gmail.com',
