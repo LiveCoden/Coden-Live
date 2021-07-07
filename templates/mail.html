@@ -8,7 +8,7 @@
     <title>Coden Live</title>
 
     <style>
-        h4{
+        .note{
             padding:10px;
             border-left: 3px solid orange;
             font-size: 15px;
@@ -23,14 +23,13 @@
     <h3>Hi {{name}}</h3>
     <p>
         You have successfully enrolled yourself for the free demo class of 
-        <b>{{course}}</b>.
+        <b><a href="{% url 'course' url %}">{{course}}</a></b>.
         <br>
         For Date and Time slot of your demo class, you will receive another mail from coden live in next few hours. Till
         then stay tuned.
         <br>
-        
-        <h4>Note: Payment process will begin after you get free demo class</h4>
-    </p>
+        </p>
+        <p class="note">Note: Payment process will begin after you get free demo class</p>
     <ul style="list-style-type:none;padding-left: 0px">
         <li>Best regards,</li>
         <li>Coden Live</li>

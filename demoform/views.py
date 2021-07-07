@@ -19,7 +19,11 @@ def index(request):
         demo.save()
 
         subject = 'Subject'
-        html_message = render_to_string('mail.html', context={"course":course,"name":name})
+        html_message = render_to_string('mail.html', context=
+                                          {"course":course,
+                                          "name":name,
+                                          "url":url_name,
+                                          })
         plain_message = strip_tags(html_message)
    
 
