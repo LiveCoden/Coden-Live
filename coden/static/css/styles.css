@@ -83,17 +83,17 @@ html,body {
      
   }
 
-  .img-fluid{
+  .img-course{
     width: 450px;
   }
   @media only screen and (min-width: 780px) and (max-width:1020px) {
-    .img-fluid{
+    .img-course{
       width: 500px
     }
   }
   
   @media only screen and (min-width: 1024px) {
-    .img-fluid{
+    .img-course{
       width: 100%
     }
   }
