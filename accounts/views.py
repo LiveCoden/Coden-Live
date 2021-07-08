@@ -36,7 +36,7 @@ def register(request):
                 return render(request, 'accounts/register.html', context)
             else:
                 # Check email
-                
+           
                 if User.objects.filter(email=email).exists():
                     messages.error(request, 'Email address already in use')
                     return render(request, 'accounts/register.html', context)
