@@ -189,16 +189,16 @@ font-size: 18px;
       font-size: 15px;
 
     }
-  
+    .setcard{
+
+      min-height: 7rem;
+      max-height: 7rem;
+    
+    }
   
   }
 
-  .setcard{
-
-    min-height: 7.8rem;
-    max-height: 7.8rem;
-  
-  }
+ 
 
   .accordion-item{
     background-color: transparent;
