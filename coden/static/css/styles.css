@@ -233,22 +233,7 @@ font-size: 18px;
   }
 
 
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-body {
-  background: #5A657A;
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-body h1 {
-  margin-bottom: 20px;
-}
-body p {
-  font-size: 18px;
-  line-height: 30px;
-}
-body a {
-  color: #FBD160;
-}
+
 
 svg {
   display: block;
@@ -360,4 +345,11 @@ svg #shadow_1_ {
   4% {
     transform: scaleY(1);
   }
+}
+
+.error{
+
+
+    background:linear-gradient(23deg, rgb(18,128,176), rgb(33,35,35))!important;
+
 }
