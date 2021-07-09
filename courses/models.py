@@ -7,6 +7,7 @@ class Course(models.Model):
     description = models.CharField(max_length=200)
     content = models.JSONField(blank=True)
     amount = models.IntegerField(default=0)
+    priority = models.IntegerField(default=0)
     teacher = models.CharField(max_length=200, default="Arshdeep Singh")
     url_name = models.CharField(max_length=200, default="Course - Coden Live")
     alt_text = models.CharField(max_length=200, default="Course - Coden Live")
