@@ -350,6 +350,7 @@ svg #shadow_1_ {
 .error{
 
 
-    background:linear-gradient(23deg, rgb(18,128,176), rgb(33,35,35))!important;
+    background: rgb(16,25,40)!important;
+    padding-bottom: 3%;
 
 }
