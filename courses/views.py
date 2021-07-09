@@ -2,7 +2,8 @@ from django.shortcuts import get_object_or_404, render
 from .models import Course
 
 def index(request):
-    courses = Course.objects.all()
+    courses = Course.objects.all().order_by('priority').reverse()
+    print(courses)
     
     context = {
         'courses': courses
