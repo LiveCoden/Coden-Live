@@ -38,12 +38,6 @@ html,body {
 
  
 
- .setcard{
-
-    min-height: 6rem;
-    max-height: 8rem;
-
- }
 
 
 
@@ -135,16 +129,30 @@ font-size: 18px;
 .course-card-title{
   height: 3rem;
 }
+
+.setcard{
+
+  min-height: 6rem;
+  max-height: 6rem;
+
+}
+
   @media only screen and (min-width: 1300px) {
 
     .main-card-text{
 
       min-height: 60px;
       font-size: 20px;
+      
     }
   
   
-  
+    .setcard{
+
+      min-height: 8rem;
+      max-height: 8rem;
+    
+    }
     .main-card-icon{
     font-size: 111px;color: rgba(23,187,158,0.69);
     }
@@ -182,6 +190,13 @@ font-size: 18px;
 
     }
   
+  
+  }
+
+  .setcard{
+
+    min-height: 7rem;
+    max-height: 7rem;
   
   }
 
