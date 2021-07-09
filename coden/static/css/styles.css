@@ -84,7 +84,7 @@ html,body {
   }
 
   .img-course{
-    width: 450px;
+    width: 300px;
   }
   @media only screen and (min-width: 780px) and (max-width:1020px) {
     .img-course{
@@ -94,7 +94,7 @@ html,body {
   
   @media only screen and (min-width: 1024px) {
     .img-course{
-      width: 100%
+      width: 80%
     }
   }
   
