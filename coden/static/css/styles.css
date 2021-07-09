@@ -130,6 +130,11 @@ font-size: 18px;
 .main-prom-col-text{
   font-size: 25px;
 }
+
+
+.course-card-title{
+  height: 3rem;
+}
   @media only screen and (min-width: 1300px) {
 
     .main-card-text{
