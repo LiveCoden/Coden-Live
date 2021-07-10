@@ -4,7 +4,7 @@ from .models import Course
 
 class StaticViewSiteMap(sitemaps.Sitemap):
     priority = 0.8
-    changefreq = 'daily'
+    changefreq = 'weekly'
 
     def items(self):
 
