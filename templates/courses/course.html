@@ -4,7 +4,10 @@
    {{course.name}} | Coden Live
 {% endblock title %}
 
- 
+{% block can %}
+<link rel="canonical" href="https://www.coden.live/courses/{{course.url_name}}" />
+{% endblock can %}
+
 {% block header %}
 
 
