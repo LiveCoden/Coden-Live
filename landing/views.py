@@ -6,3 +6,6 @@ def index(request):
 
 def compiler(request):
     return render(request,'compiler/compiler.html')
+
+def sitemap(request):
+    return render(request,'sitemap.xml',content_type='text/xml')
