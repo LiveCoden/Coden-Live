@@ -8,4 +8,8 @@ def compiler(request):
     return render(request,'compiler/compiler.html')
 
 def sitemap(request):
-    return render(request,'sitemap.xml',content_type='text/xml')
+    return render(request,'sitemaps.xml',content_type='text/xml')
+
+
+def robot(request):
+    return render(request,'robots.txt',content_type='text')    
