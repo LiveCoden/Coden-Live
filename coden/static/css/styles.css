@@ -86,7 +86,7 @@ html,body {
     background-color: transparent;
     margin-bottom: 3%;
   }
-  .accordion-button,.collapsed{
+  .accordion-button{
     opacity: 0.9;
     color:  white !important;
     background:linear-gradient(23deg, rgb(18,128,176), rgb(33,35,35))!important;
