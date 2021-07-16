@@ -30,11 +30,11 @@ Courses | Coden Live
 
 {% block content %}
 
-<div id="courses" class="container text-center" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="margin-top: 10%;margin-bottom: 5%;">
-    <div class="row text-center d-flex justify-content-around  align-content-center" style="color: rgb(255, 255, 255);">
+<div id="courses" class="" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="margin-top: 10%;margin-bottom: 5%;">
+    <div class="row text-center d-flex px-4 justify-content-equal  align-content-center" style="color: rgb(255, 255, 255);">
         
         {% for course in courses %}
-        <div class="col col-12 col-sm-11 col-md-6 col-lg-4" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300">
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-4" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300">
             <div class="card" data-bss-hover-animate="pulse" style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><img src="{{course.icon.url}}" style="width: 144px;height: 145px;">
                     <h4 class="card-title course-card-title" style="margin-top: 10px;margin-bottom: 10px;">{{course.name}}</h4>

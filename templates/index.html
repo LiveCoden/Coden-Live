@@ -42,15 +42,13 @@ Home | Coden Live
 {% block content %}
 
 {% include 'partials/alerts.html' %}
-<div class=" container text-center flow" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
+<div  data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
     style="margin-top: 10%;margin-bottom: 5%;">
-    <div class="row">
-        ss
-    </div>
+    
     <div class="row text-center d-flex justify-content-around"
         style="color: rgb(255, 255, 255); margin-left:0;margin-right:0">
 
-        <div class="col col-xs-12 col-md-5">
+        <div class="col col-xs-12 col-sm-5 col-md-5">
             <div class="card" data-bss-hover-animate="pulse"
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
@@ -67,7 +65,7 @@ Home | Coden Live
                 </div>
             </div>
         </div>
-        <div class="col col-xs-12 col-md-5">
+        <div class="col col-xs-12 col-sm-5 col-md-5">
             <div class="card" data-bss-hover-animate="pulse"
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
@@ -84,7 +82,7 @@ Home | Coden Live
             </div>
         </div>
 
-        <div class="col col-xs-12 col-md-5">
+        <div class="col col-xs-12 col-sm-5 col-md-5">
             <div class="card" data-bss-hover-animate="pulse"
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
@@ -103,7 +101,7 @@ Home | Coden Live
         </div>
 
 
-        <div class="col col-xs-12 col-md-5">
+        <div class="col col-xs-12 col-sm-5 col-md-5">
             <div class="card" data-bss-hover-animate="pulse"
                 style="background: linear-gradient(-23deg, #3d3b3e 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
@@ -124,13 +122,13 @@ Home | Coden Live
         </div>
 
     </div>
-</div>
 
+</div>
 <div class="row d-flex justify-content-center align-items-center align-content-center align-self-center flow"
     data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
     style="background: rgb(72,66,66);opacity: 0.70;margin-bottom: 5%;padding-right: 5%;padding-left: 5%;padding-bottom: 3%;padding-top: 3%;">
     <div class=" col-sm-12 col-12" style="transform: perspective(590px);">
-        <h1 style="color: rgb(255,255,255);margin-bottom: 2%;">Promoting Coding Culture</h1>
+        <h2 style="color: rgb(255,255,255);margin-bottom: 2%;">Promoting Coding Culture</h2>
         <div class="row">
             <div class="col">
                 <p class="main-prom-text">Still thinking how to code? Or want to learn secret SEO techniques and create
@@ -242,9 +240,16 @@ Home | Coden Live
         </div>
     </div>
 </section>
-<div class="carousel slide flow" data-bs-ride="carousel" data-bs-interval="10000" data-aos="flip-up"
-    data-aos-duration="300" data-aos-delay="300" data-aos-once="true" id="carousel-t"
-    style="background: rgb(72,66,66);margin-top: 5%;opacity: 0.70;">
+<section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 0.90;margin-right: 0px;padding-right: 2%;padding-left: 2%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
+
+
+    <div class="col mt-1">
+        <h2 style="color: var(--bs-white);text-align: left;margin-bottom: 2%;">What will people say about us?
+        </h2>
+    </div>
+
+<div class="carousel slide flow" data-bs-ride="carousel" id="carousel-t"
+    style="background: rgb(72,66,66);margin-top: 2%;opacity: 0.70;">
     <div class="carousel-inner" style="border-color: rgb(255,255,255);">
         <div class="carousel-item active">
             <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle"
@@ -294,6 +299,8 @@ Home | Coden Live
         <li data-bs-target="#carousel-t" data-bs-slide-to="2"></li>
     </ol>
 </div>
+</section>
+
 
 <div class="row d-flex flex-column flow" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300"
     style="background: transparent;opacity: 0.90;margin-right: 0px;padding-right: 2%;padding-left: 2%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
@@ -402,7 +409,8 @@ Home | Coden Live
     </div>
 
 
-<section>
+<section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 0.90;margin-right: 0px;padding-right: 2%;padding-left: 2%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
+
 
     <div class="col mt-1">
         <h2 style="color: var(--bs-white);text-align: left;margin-bottom: 2%;">What will you become?
@@ -504,5 +512,5 @@ Home | Coden Live
         </div>
     </div>
 </section>
-</div>
+
 {% endblock content %}
