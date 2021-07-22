@@ -5,6 +5,7 @@ from .models import Course
 class StaticViewSiteMap(sitemaps.Sitemap):
     priority = 0.8
     changefreq = 'weekly'
+    protocol = "https"
 
     def items(self):
 
