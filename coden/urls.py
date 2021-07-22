@@ -8,11 +8,13 @@ from django.views.generic.base import TemplateView
 from landing.sitemaps import StaticViewSiteMap
 from courses.sitemaps import StaticViewSiteMap as courses
 from accounts.sitemaps import StaticViewSiteMap as accounts
+from courses.sitemaps import SingleStaticViewSiteMap as course
 
 sitemaps = {
       
       'landing': StaticViewSiteMap,
       'courses': courses,
+      'course': course,
       'accounts': accounts,
 
 

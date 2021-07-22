@@ -9,7 +9,20 @@ class StaticViewSiteMap(sitemaps.Sitemap):
 
     def items(self):
 
-       return Course.objects.all()
+       return  Course.objects.all()
 
     def location(self,obj):
         return '/courses/%s' % (obj.url_name)
+
+
+class SingleStaticViewSiteMap(sitemaps.Sitemap):
+    priority = 0.9
+    changefreq = 'weekly'
+    protocol = "https"
+
+    def items(self):
+
+       return  ['courses']
+
+    def location(self,item):
+        return reverse(item)
