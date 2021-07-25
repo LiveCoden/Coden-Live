@@ -27,6 +27,8 @@ urlpatterns = [
     path('', include('landing.urls',),),
     path('courses/', include('courses.urls')),
     path('dencod/', admin.site.urls), 
+     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
+     name='django.contrib.sitemaps.views.sitemap'),
     path('sitemaps.xml', sitemap, {'sitemaps': sitemaps},
      name='django.contrib.sitemaps.views.sitemap')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
