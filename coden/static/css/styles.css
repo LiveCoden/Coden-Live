@@ -492,3 +492,38 @@ svg #shadow_1_ {
   color: white;
 
 }
+
+
+.features-text-css{
+	color: #fff;
+	min-height: 15vh;
+	font-family: 'Sen', sans-serif;
+}
+
+.features-row-card:nth-child(3){
+	border-right:2px solid #fff;
+	border-top: 2px solid #fff;
+}
+.features-row-card:nth-child(1) {
+	border-left:2px solid #fff;
+	border-top: 2px solid #fff;
+}
+.features-row-card:nth-child(2) 
+{
+	border-right:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+.features-row-card:nth-child(4){
+	border-left:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+.list-features{
+	list-style-position: inside;
+  width: fit-content;
+}
+.ul-center{
+ display: flex;
+ justify-content: center;
+}
+
+
