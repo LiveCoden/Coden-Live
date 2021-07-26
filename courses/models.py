@@ -14,7 +14,7 @@ class Course(models.Model):
     who_should_apply = models.TextField(blank=True)
     job_opportunity = models.TextField(blank=True)
     major_topic_covered = models.TextField(blank=True)
-    skills = models.JSONField(default='[]')
+    skills = models.JSONField(default=[])
 
     def __str__(self):
         return self.name
