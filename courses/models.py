@@ -11,6 +11,10 @@ class Course(models.Model):
     teacher = models.CharField(max_length=200, default="Arshdeep Singh")
     url_name = models.CharField(max_length=200, default="Course - Coden Live")
     alt_text = models.CharField(max_length=200, default="Course - Coden Live")
-
+    who_should_apply = models.TextField()
+    job_opportunity = models.TextField()
+    major_topic_covered = models.TextField()
+    skills = models.JSONField()
+    
     def __str__(self):
         return self.name
