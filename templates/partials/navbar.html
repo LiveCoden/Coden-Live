@@ -12,9 +12,14 @@
                     <li class="nav-item"><a class="nav-link" style="font-weight: bolder;" href="{% url 'compiler' %}">Compiler</a></li>
 
                 </ul>
-                <form class="me-auto" target="_self">
-                    <!-- <div class="d-flex align-items-center"><label class="form-label d-flex mb-0" for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"></div> -->
-                </form>
+                <div class="me-auto">
+<div style="width: 300px !important;">
+    <div class="gcse-search">    </div>                    
+
+</div>
+
+                        
+                </div>
 
                 {% if user.is_authenticated %}
                 

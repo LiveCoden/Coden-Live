@@ -93,3 +93,24 @@ setTimeout(function() {
 
 // 	}
 // })
+
+
+
+let search =  document.getElementsByClassName("gsc-search-button-v2")
+let item = null
+
+// setTimeout(() => {
+// 	// document.getElementsByClassName("gsc-input")[2].placeholder="www"
+
+// 	item = search[0]
+// 	item.addEventListener("click", function(e) {
+// 		 document.getElementsByClassName("gsc-input")[2].focus()
+
+// 		})
+// }, 1000);
+
+
+
+window.addEventListener('load', function() {
+	document.getElementsByClassName("gsc-input")[2].placeholder="Search Here"
+});
