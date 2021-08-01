@@ -114,3 +114,6 @@ let item = null
 window.addEventListener('load', function() {
 	document.getElementsByClassName("gsc-input")[2].placeholder="Search Here"
 });
+
+
+
