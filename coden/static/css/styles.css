@@ -90,7 +90,7 @@ width: 1024px;
 .accordion-button{
   color:  white !important;
   background: transparent !important;
-  border: 2px solid rgba(0,224,187);
+  border: 2px solid rgba(23,187,158,0.69);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -99,7 +99,7 @@ width: 1024px;
   box-shadow: none;
   color:  white !important;
   background: transparent !important;
-  border: 3px solid rgba(0,224,187);
+  border: 3px solid rgba(23,187,158,0.69);
   border-left: none;
   border-right: none;
   border-top: none;}
@@ -135,7 +135,7 @@ width: 1024px;
 
 
 .main-card-icon{
-font-size: 91px;color: rgba(0,224,187);
+font-size: 91px;color: rgba(23,187,158,0.69);
 }
 
 
@@ -152,7 +152,7 @@ font-size: 18px;
 
 .main-icon-prom{
 margin-right: 14px;font-size: 25px;
-color: rgba(0,224,187);
+color: rgba(23,187,158,0.69);
 }
 
 .main-prom-col-text{
@@ -223,7 +223,7 @@ max-height: 6rem;
   
   }
   .main-card-icon{
-  font-size: 111px;color: rgba(0,224,187);
+  font-size: 111px;color: rgba(23,187,158,0.69);
   }
 
 
@@ -495,13 +495,13 @@ transform-origin: 50%;
 }
 
 .wwb{
-color:#fff;border:none ;border-bottom: 2px solid rgba(0,224,187);  
+color:#fff;border:none ;border-bottom: 2px solid rgba(23,187,158,0.69);  
 /* background:rgb(72,66,66);opacity: 0.90;color: var(--bs-light); */
 background: #3A506B;
 }
 @media only screen and (min-width: 762px) {
   .wwb{
-    color:#fff;border:none ;border-bottom: 2px solid rgba(0,224,187);  
+    color:#fff;border:none ;border-bottom: 2px solid rgba(23,187,158,0.69);  
     /* background:rgb(72,66,66);opacity: 0.90;color: var(--bs-light); */
     background: #3A506B;
     width: 45vw;
@@ -579,7 +579,7 @@ padding: 0px!important;
 }
 .main-card-background{
   background-color: transparent;
-  border: 3px solid rgba(0,224,187);
+  border: 3px solid rgba(23,187,158,0.69);
   border-radius: 20px;
   
   
