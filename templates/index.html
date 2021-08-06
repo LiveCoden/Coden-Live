@@ -46,20 +46,20 @@ Home | Coden Live
 {% include 'partials/alerts.html' %}
 
 <div class="col mt-1 welcome " data-aos="fade" data-aos-duration="600" data-aos-delay="600" >
-    <h1  style="text-align: center;margin-bottom: 1%;margin-top:1%;padding-left:2%">Welcome to Coden Live
+    <h1  style="text-align: center;margin-bottom: 20px;margin-top:1%;padding-left:2%">Welcome to Coden Live
     </h1>
 </div>
 
 
-<div  data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
+<div class="main-bg-card" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
     style="margin-bottom: 5%;">
     
     <div class="row text-center px-2 d-flex justify-content-around"
         style="color: rgb(255, 255, 255); margin-left:0;margin-right:0">
 
         <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="card" data-bss-hover-animate="pulse"
-                style="background: linear-gradient(-23deg, rgb(16,25,40) 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
+            <div class="main-card-background card" data-bss-hover-animate="pulse"
+                style="margin-bottom: 15px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-book-reader"></i>
                     <h4 class="card-title main-card-title">Courses</h4>
@@ -67,7 +67,7 @@ Home | Coden Live
                         are available here</p>
                     <a href="{% url 'courses' %}">
                         <button class="btn btn-secondary" type="button"
-                            style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Enroll
+                            style="background: rgba(0,224,187);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Enroll
                             Now</button>
 
                     </a>
@@ -75,15 +75,15 @@ Home | Coden Live
             </div>
         </div>
         <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="card" data-bss-hover-animate="pulse"
-                style="background: linear-gradient(-23deg, rgb(16,25,40) 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
+            <div class="main-card-background card" data-bss-hover-animate="pulse"
+                style="margin-bottom: 15px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-laptop-code"></i>
                     <h4 class="card-title main-card-title">Compiler</h4>
                     <p class="card-text main-card-text">Compiler support for students testing their code</p>
                     <a href="{% url 'compiler' %}">
                         <button class="btn btn-secondary" type="button"
-                            style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Code
+                            style="background: rgba(0,224,187);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Code
                             Now</button>
 
                     </a>
@@ -92,8 +92,8 @@ Home | Coden Live
         </div>
 
         <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="card" data-bss-hover-animate="pulse"
-                style="background: linear-gradient(-23deg, rgb(16,25,40) 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
+            <div class="main-card-background card" data-bss-hover-animate="pulse"
+                style="margin-bottom: 15px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-blog"></i>
                     <h4 class="card-title main-card-title">Blogs</h4>
@@ -101,8 +101,8 @@ Home | Coden Live
                     <a href="{% url 'courses' %}">
 
 
-                        <button class="btn btn-secondary" disabled type="button"
-                            style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Coming
+                        <button class="btn btn-secondary"  type="button"
+                            style="background: rgba(0,224,187);;border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Coming
                             Soon</button>
                     </a>
                 </div>
@@ -111,8 +111,8 @@ Home | Coden Live
 
 
         <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="card" data-bss-hover-animate="pulse"
-                style="background: linear-gradient(-23deg, rgb(16,25,40) 4%, transparent);margin-bottom: 15px;border-width: 0px;margin-top: 15px;">
+            <div class="main-card-background card" data-bss-hover-animate="pulse"
+                style="margin-bottom: 15px;margin-top: 15px;">
                 <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
                         class="main-card-icon fas fa-chalkboard-teacher"></i>
                     <h4 class="card-title main-card-title">Q n A</h4>
@@ -122,7 +122,7 @@ Home | Coden Live
                         href="{% url 'login' %}" {% endif %}>
 
                         <button class="btn btn-secondary" type="button"
-                            style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Solve
+                            style="background: rgba(0,224,187);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Solve
                             Now</button>
                     </a>
 
@@ -255,7 +255,7 @@ Home | Coden Live
 
   
 <div class="carousel slide flow" data-bs-ride="carousel" id="carousel-t"
-    style="background: rgb(16,25,40);margin-top: 2%;opacity: 0.70;">
+    style="background: #3A506B;margin-top: 2%;">
     <div class="carousel-inner" style="border-color: rgb(255,255,255);">
         <div class="carousel-item active">
             <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle"
@@ -294,15 +294,15 @@ Home | Coden Live
         </div>
     </div>
     <div style="background: transparent;"><a class="carousel-control-prev" href="#carousel-t" role="button"
-            data-bs-slide="prev" style="background: rgb(16,25,40);opacity: 0.70;"><span
+            data-bs-slide="prev" style="background: #3A506B;"><span
                 class="carousel-control-prev-icon" style="opacity: 0.70;"></span><span
                 class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-t"
-            role="button" data-bs-slide="next" style="background: rgb(16,25,40);opacity: 0.70;"><span
+            role="button" data-bs-slide="next" style="background:#3A506B;"><span
                 class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-    <ol class="carousel-indicators" style="background: rgb(16,25,40);opacity: 0.70;">
-        <li data-bs-target="#carousel-t" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#carousel-t" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carousel-t" data-bs-slide-to="2"></li>
+    <ol class="carousel-indicators" style="background: #3A506B;">
+        <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="0" class="active"></li>
+        <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="1"></li>
+        <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="2"></li>
     </ol>
 </div>
 </section>
@@ -316,7 +316,7 @@ Home | Coden Live
     </div>
 
 
-        <div class="accordion" id="main-accordian">
+        <div class="accordion accordion-flush"  id="main-accordian">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-heading-1">
                     <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#item-1"
@@ -414,17 +414,17 @@ Home | Coden Live
     </div>
 
 
-<section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 0.90;margin-right: 0px;padding-right: 2%;padding-left: 2%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
+<section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 1.0;margin-right: 0px;padding-right: 2%;padding-left: 2%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
 
 
     <div class="col mt-1">
-        <h2 class="mt-2 mb-2" style="color: var(--bs-white);text-align: left;margin-bottom: 3%;padding-left:2%">What will you become?
+        <h2 class="mt-2 mb-2" style="color: var(--bs-white);text-align: left;margin-bottom: 3%;padding-left:2%">Job Opportunities
         </h2>
     </div>
 
-    <div class="row sect">
-        <div class="col-md-6 ">
-            <div class="card px-5 py-4 wwb">
+    <div class="row sect d-flex justify-content-around">
+        <div class="col-12 col-md-6 mt-5 wwb">
+            <div class="card px-5 py-4 wwb-card ">
                 <h3 class="card-title mb-4">Front end developer</h3>
                
                 <p class="card-text mb-4">
@@ -440,21 +440,24 @@ Home | Coden Live
             </div>
 
         </div>
-        <div class="col-md-6 mt-5">
-            <div class="card px-5 py-4 wwb wwb">
+        <div class="col-12 col-md-6 mt-5 wwb ">
+            <div class="card px-5 py-4 wwb-card" >
                 <h3 class="card-title mb-4">Web Designer</h3>
                 <p class="card-text mb-4">
                     Don't know how to code ? We at Coden Live make sure that we will deliver
                     you the most easy and effective way of learning things . The tools that
                     one will learn in this course will make sure that the student will be
+                    one will learn in this course will make sure that the student will be
+                    one will learn in this course will make sure that the student will be
+
                     able to design websites and also make some static websites on their own.
                 </p>
             </div>
         </div>
     </div>
-    <div class="row sect">
-        <div class=" col-md-6 mt-5">
-            <div class="card px-5 py-4 wwb">
+    <div class="row sect d-flex justify-content-around">
+        <div class=" col-12 col-md-6 mt-5 wwb">
+            <div class="card px-5 py-4 wwb-card">
                 <h3 class="card-title mb-4">Digital Marketing Manager</h3>
                 <p class="card-text mb-4">
                     It is not quite wrong to say that this position is responsible
@@ -468,8 +471,8 @@ Home | Coden Live
                 </p>
             </div>
         </div>
-        <div class=" col-md-6 mt-5">
-            <div class="card px-5 py-4 wwb">
+        <div class=" col-12 col-md-6 mt-5 wwb">
+            <div class="card px-5 py-4 wwb-card">
                 <h3 class="card-title mb-4">SEO Expert</h3>
                 <p class="card-text mb-4">
                     One of the most demanding positions in 2021 because who does not
@@ -483,9 +486,9 @@ Home | Coden Live
             </div>
         </div>
     </div>
-    <div class="row sect">
-        <div class=" col-md-6 mt-5">
-            <div class="card px-5 py-4 wwb">
+    <div class="row sect d-flex justify-content-around">
+        <div class=" col-12 col-md-6 mt-5 wwb">
+            <div class="card px-5 py-4 wwb-card">
                 <h3 class="card-title mb-4">
                     Database Analyst
                 </h3>
@@ -501,8 +504,8 @@ Home | Coden Live
                 </p>
             </div>
         </div>
-        <div class=" col-md-6 mt-5">
-            <div class="card px-5 py-4 wwb">
+        <div class=" col-12 col-md-6 mt-5 wwb">
+            <div class="card px-5 py-4 wwb-card">
                 <h3 class="card-title mb-4">Python Flask Developer</h3>
                 <p class="card-text mb-4">
                     Modern web applications require backend connectivity and bots which
