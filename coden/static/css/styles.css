@@ -516,8 +516,12 @@ background: #3A506B;
 padding: 4%;
 color: white;
 
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+
+
 
 
 .features-text-css{
@@ -679,4 +683,19 @@ padding: 0px!important;
   background-color: transparent;
   border:none;
 
+}
+
+.section-heading{
+  font-size: 3rem;
+  color:#30c9cd;
+  font-family: 'Sen', sans-serif;
+  text-align:center;
+}
+
+.section-divider{
+  width:20vw;
+  border: 2px solid #30c9cd;
+  opacity: .8;
+  text-align: center;
+  border-radius: .5rem;
 }
