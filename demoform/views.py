@@ -44,7 +44,7 @@ def index(request):
 
         else:
 
-            url_name = request.POST['url_name']
+            url_name = Course.objects.get(name=course).url_name
 
 
             demo = DemoForm(name=name, email=email, course=course, phone=phone)
