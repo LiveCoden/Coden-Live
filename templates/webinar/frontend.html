@@ -1,7 +1,30 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 {% include 'partials/alerts.html' %}
+
+<div class="row d-flex justify-content-around">
+
+    <div class="col-12 col-md-4 my-auto" style="color: white;">
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+        wwwwwwwww
+
+    </div>
+
+    <div class="col-12 col-md-7">
+
+
 <div class="form-body">
     <div class="row">
         <div class="form-holder">
@@ -15,7 +38,7 @@
                     <p>                       <b>16/09/2000</b>
                     </p>
 
-                    <form class="requires-validation" method="POST" action="{% url 'web_frontend_post' %}" novalidate>
+                    <form class="requires-validation" method="POST"  novalidate>
                         {% csrf_token %}
 
                         <div class="col-md-12 mt-5">
@@ -31,9 +54,9 @@
                         </div>
 
                         <div class="col-md-12 mt-5">
-                            <input class="form-control" type="number" name="number" placeholder="Contact Number" required>
+                            <input class="form-control" id="web_no" minlength="10" maxlength="10" step="1" type="text" pattern="[0-9]*" name="number" placeholder="Contact Number" required>
                             <!-- <div class="valid-feedback">Username field is valid!</div> -->
-                            <div class="invalid-feedback">Contact Number cannot be blank!</div>
+                            <div class="invalid-feedback">Contact Number should be greater than 10!</div>
                          </div>
 
                          <div class="col-md-12 mt-5">
@@ -67,6 +90,8 @@
         </div>
     </div>
 </div>
+</div>
 
-    
+</div>
+
 {% endblock content %}
