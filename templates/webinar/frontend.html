@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'partials/alerts.html' %}
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>FRONT-END in 60 Minutes </h3>
+                    <p>Registration Form
+                        
+
+                    </p>
+                    <p>                       <b>16/09/2000</b>
+                    </p>
+
+                    <form class="requires-validation" method="POST" action="{% url 'web_frontend_post' %}" novalidate>
+                        {% csrf_token %}
+
+                        <div class="col-md-12 mt-5">
+                           <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                           <div class="valid-feedback">Name field is valid!</div>
+                           <div class="invalid-feedback">Name field cannot be blank!</div>
+                        </div>
+
+                        <div class="col-md-12 mt-5">
+                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                             <div class="valid-feedback">Email field is valid!</div>
+                             <div class="invalid-feedback">Enter a valid Email!</div>
+                        </div>
+
+                        <div class="col-md-12 mt-5">
+                            <input class="form-control" type="number" name="number" placeholder="Contact Number" required>
+                            <!-- <div class="valid-feedback">Username field is valid!</div> -->
+                            <div class="invalid-feedback">Contact Number cannot be blank!</div>
+                         </div>
+
+                         <div class="col-md-12 mt-5">
+                            <select class="form-select " name="how" required>
+                                  <option selected disabled value="">How did you get to know us?</option>
+                                  <option value="instagram">Instagram</option>
+                                  <option value="whatsapp">WhatsApp</option>
+                                  <option value="twitter">Twitter</option>
+                                  <option value="other">Other</option>
+
+                           </select>
+                            <div class="valid-feedback">You selected a position!</div>
+                            <div class="invalid-feedback">Please select a position!</div>
+                       </div>
+
+
+                    
+
+
+                    
+
+                   
+              
+
+                        <div class="form-button mt-5">
+                            <button id="submit" type="submit" class="btn btn-form">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+{% endblock content %}

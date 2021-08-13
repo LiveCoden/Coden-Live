@@ -25,6 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Application definition
 
 INSTALLED_APPS = [
+    'webinar.apps.WebinarConfig',
     'demoform.apps.DemoformConfig',
     'landing.apps.LandingConfig',
     'courses.apps.CoursesConfig',

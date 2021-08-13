@@ -96,6 +96,8 @@ setTimeout(function() {
 
 
 
+	
+
 let search =  document.getElementsByClassName("gsc-search-button-v2")
 let item = null
 
@@ -117,4 +119,19 @@ window.addEventListener('load', function() {
 
 
 
-
+(function () {
+	'use strict'
+	const forms = document.querySelectorAll('.requires-validation')
+	Array.from(forms)
+	  .forEach(function (form) {
+		form.addEventListener('submit', function (event) {
+		  if (!form.checkValidity()) {
+			event.preventDefault()
+			event.stopPropagation()
+		  }
+	
+		  form.classList.add('was-validated')
+		}, false)
+	  })
+	})()
+	

@@ -21,6 +21,8 @@ sitemaps = {
 }
 
 urlpatterns = [
+          path('webinar/', include("webinar.urls")),
+
     path('demo/', include("demoform.urls")),
     path('account/', include("accounts.urls")),
     path('accounts/', include('allauth.urls')),
