@@ -6,10 +6,12 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 def webinar(request):
-    if(request.method) == 'POST':
+
+    if(request.method) == 'GET':
         code = request.GET["code"]
+        
         if(code=="748"):
-            HttpResponse()
+            return JsonResponse("{'ok':'yes'}", safe=False)
         else:
             return HttpResponseForbidden()
 
