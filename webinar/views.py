@@ -11,7 +11,7 @@ def webinar(request):
         code = request.GET["code"]
         
         if(code=="748"):
-            return JsonResponse("{'ok':'yes'}", safe=False)
+            return JsonResponse({'ok':'200'}, safe=False)
         else:
             return HttpResponseForbidden()
 
