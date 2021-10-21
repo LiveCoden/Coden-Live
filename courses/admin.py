@@ -7,6 +7,6 @@ class CourseAdmin(admin.ModelAdmin):
     list_display_links = ('id', )
     list_editable = ('name' ,'url_name','priority', 'amount')
     search_fields = ('name',)
-    list_per_page = 20
+    list_per_page = 15
 
 admin.site.register(Course, CourseAdmin)
