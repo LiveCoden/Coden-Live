@@ -5,5 +5,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('compiler', views.compiler, name='compiler'),
     # path('sitemap.xml', views.sitemap),
-    path('robots.txt', views.robot)  
+    path('robots.txt', views.robot)  ,
+        path('script', views.script, name='script'),
+
 ]
