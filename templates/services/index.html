@@ -1,0 +1,1020 @@
+{% load static %} {% load hosts %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- on scroll animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <title>Best digital marketing company in Delhi NCR - Coden.Live</title>
+
+    <meta name="description" content="Best Digital marketing company in Delhi NCR. Digital marketing experts for all Online Marketing Services ✔SEO ✔SMO ✔PPC. We also create fast and secure websites." />
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Best digital marketing company in Delhi NCR - Coden.Live" />
+    <meta property="og:description" content="Best Digital marketing company in Delhi NCR. Digital marketing experts for all Online Marketing Services ✔SEO ✔SMO ✔PPC. We also create fast and secure websites." />
+    <meta property="og:url" content="https://coden.live/Best-digital-marketing-company-in-india" />
+    <meta property="og:site_name" content="Coden Live" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Best digital marketing agency in Delhi NCR - Coden.Live" />
+    <meta name="twitter:description" content="Best Digital marketing company in Delhi NCR. Digital marketing experts for all Online Marketing Services ✔SEO ✔SMO ✔PPC. We also create fast and secure websites." />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+
+
+
+    <!-- <link rel="stylesheet" href="{% static 'css/dh-header-non-rectangular.css' %}"> -->
+
+
+    <link rel="stylesheet" href="{% static 'css/Header-Dark.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"> -->
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"> -->
+
+
+
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+        })
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                nav: false,
+                dots: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                margin: 20,
+                slideSpeed: 3000,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    960: {
+                        items: 3
+                    }
+                }
+            });
+
+
+
+
+            var setMinHeight = function(minheight = 0) {
+                jQuery('.owl-carousel').each(function(i, e) {
+                    var oldminheight = minheight;
+                    jQuery(e).find('.owl-item').each(function(i, e) {
+                        minheight = jQuery(e).height() > minheight ? jQuery(e).height() : minheight;
+                    });
+                    jQuery(e).find('.item').css("min-height", minheight + "px");
+                    minheight = oldminheight;
+                });
+            };
+
+            setMinHeight();
+        });
+
+        $(document).on('resize', function() {
+            setMinHeight();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" class="header-dark">
+        {% load static %} {% load hosts %}
+
+        <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search" style=" background: #0F2027;
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);">
+            <div class="container">
+                <a class="navbar-brand" href="{% host_url 'index' host 'www' %}">
+                    <img src="{% static 'img/coden_logo.png' %}" alt="coden live logo" style="width: 42px;display:inline">&nbsp;Coden Live</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" style="font-weight: bolder;" href="{% host_url 'services_main' host 'services' %}">Services</a></li>
+
+                        <li class="nav-item"><a class="nav-link" style="font-weight: bolder;" href="{% host_url 'courses' host 'www' %}">Courses</a></li>
+
+                        <!-- <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Dropdown </a>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                            </li> -->
+                        <li class="nav-item"><a class="nav-link" style="font-weight: bolder;" href="{% host_url 'compiler' host 'www' %}">Compiler</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-weight: bolder;" href="#">Get Demo</a></li>
+
+                    </ul>
+                    <div class="me-auto">
+                        <div style="width: 300px !important;">
+                            <div class="gcse-search"> </div>
+
+                        </div>
+
+
+                    </div>
+
+                    {% if user.is_authenticated %}
+
+                    <span class="navbar-text"><a class="login">{{ user.first_name }} {{ user.last_name }}</a></span>
+
+                    <a class="btn btn-light action-button" role="button" href="{% host_url 'logout' host 'www' %}"> Logout</a> {% else %}
+                    <span class="navbar-text"><a class="login" href="{% host_url 'login' host 'www' %}">Login</a></span>
+
+                    <a class="btn btn-light action-button" role="button" href="{% host_url 'register' host 'www' %}">Sign Up</a> {% endif %}
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="services-container ">
+        <!-- <a href="https://wa.me/919821179620" target="_blank">
+          <img src="https://img.icons8.com/color/70/000000/whatsapp--v1.png"  class="wappicon"
+           style="position: fixed;bottom: 20px;right: 20px;z-index: 2;  ">
+        <a> -->
+        <!-- service header -->
+        <div class="row services-header justify-content-center align-items-center  text-center d-flex">
+            <div class=" col-12 mt-sm-4 mt-lg-0 col-sm-7  justify-content-center align-items-start text-start">
+                <h3 class="mt-lg-5 services-header-title fw-bold">
+                    A One-stop solution for all online business problems
+                </h3>
+                <h1 class="mt-4 services-header-p col-12 px-2 px-sm-0 col-sm-7 ">
+                    <i>We are a Digital Marketing Company in India providing fusion of all the right services for all your right business growth. 
+                            <br> <br>
+                            <b >WE CODE YOUR IDEAS INTO REALITY</b>
+                        </i>
+                </h1>
+
+            </div>
+            <div class="col-5 col-sm-4 col-md-4 me-2 service_header_vec-top">
+                <img src="{% static 'img/gif2.gif' %}" class="service_header_vec" width="380" height="380" style="transform:scaleX(-1)">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About section -->
+    <div class="container">
+        <section class="section_all text-dark" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title_all text-center">
+                            <h3 class=" text-dark service-about-heading " id="services-wlcm-abt-header">Welcome To <span class="text_custom " style="color: #2C5364;">Coden
+                                    Live</span></h3>
+
+                            <div class="">
+                                <i class=""></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row vertical_content_manage mt-5">
+                    <div class="col-lg-6">
+                        <div class="about_header_main mt-3">
+                            <h5 class="about_heading text-capitalize fw-bold mt-4">About Us</h4>
+                                <p class="text-dark mt-3" style="font-size: large;">
+                                    We are the best digital marketing agency in Delhi NCR offering cutting-edge solutions to make your business stand out online. We are a team of young, vibrant and passionate developers who do not just give in the best solutions but also help build a better
+                                    tomorrow for you and your business.
+                                </p>
+                                <p class="text-dark mt-3" style="font-size: large;">
+                                    We live with our customers in the digital world, learn how they work, what makes them unique and then give them a spare hand with intelligent solutions that can complement their needs. Our skills are relatively mammoth compared to our rivals! While many
+                                    other digital marketing companies in Delhi are dependent on PPC, we do not solely rely upon this. We use our skills in Cyber Security, SEO, App Development, Personalized Content Writing, and Data Analysis to ensure
+                                    that your brand is able to optimize its online presence.
+                                </p>
+                                <button id="services-contact-btn-abt" class="mt-2 btn btn-lg btn-light service-about-btn" style="background:#2C5364;" data-aos="slide-right">
+                                    <a href="./contact_form.html" class="text-decoration-none "
+                                        style="color:white ;">Contact Us Now</a>
+                                </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-lg-5 ">
+                        <div class="img_about mt-3">
+                            <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-1">
+                    <div class="col-sm-4">
+                        <div class="about_content_box_all mt-3">
+                            <div class="about_detail text-center">
+
+                                <div class="circle text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px;height: 80px; background-color: #2C5364">
+                                    <i class="fas fa-lightbulb-on fa-3x services-abt-icon-1"></i>
+                                </div>
+                                <h5 class="text-dark fw-bold text-capitalize mt-3 font-weight-bold">Innovative Solutions
+                                </h5>
+                                <!-- <p class="edu_desc mt-3 mb-0 text-dark">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. </p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="about_content_box_all mt-3">
+                            <div class="about_detail text-center">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px;height: 80px; background-color: #2C5364">
+                                    <i class="far fa-dollar-sign fa-3x services-abt-icon-2"></i>
+                                </div>
+                                <h5 class="text-dark fw-bold text-capitalize mt-3 font-weight-bold">Cost Effective
+                                </h5>
+                                <!-- <p class="edu_desc mb-0 mt-3 text-dark">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. </p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="about_content_box_all mt-3">
+                            <div class="about_detail text-center">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px;height: 80px; background-color: #2C5364">
+                                    <i class="fas fa-bolt fa-3x services-abt-icon-3"></i>
+                                </div>
+                                <h5 class="text-dark fw-bold text-capitalize mt-3 font-weight-bold">High Performance
+                                </h5>
+                                <!-- <p class="edu_desc mb-0 mt-3 text-dark">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- services section -->
+    <div class="services my-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h3 class=" mb-5 text-dark service-about-heading " id="services-wlcm-abt-header">Our<span class="text_custom " style="color: #2C5364;"> Services</span></h3>
+                <div class="col-md-6 col-lg-4 mb-3 services-card">
+                    <div class="box p-5">
+                        <i class="fas fa-laptop-code fa-3x mb-4"></i>
+                        <h4>Web Development</h4>
+                        <p>Modern responsive websites with emphasis on user experience and conversion optimization which include both front-end, and back end design process.</p>
+                        <a class="readmore" href="#"><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3  services-card">
+                    <div class="box p-5">
+                        <i class="fas fa-mobile-alt fa-3x mb-4"></i>
+                        <h4>App Development</h4>
+                        <p>Hybrid App Development service brings the benefits of native and web to you and your business.This is all while using one single code base, or in other words, one single app everywhere.</p>
+                        <a class="readmore" href="#"><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3  services-card">
+                    <div class="box p-5">
+                        <i class="fas fa-shield-alt  fa-3x mb-4"></i>
+                        <h4>Cyber Security</h4>
+                        <p>We significantly reduce the cost of detecting advanced threats, normalize security operations across physical and virtual infrastructures, detect malicious activity in real-time, and protect your data at rest or in motion.</p>
+                        <a class="readmore" href="#"><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3  services-card">
+                    <div class="box p-5">
+                        <i class="fas fa-pencil-alt fa-3x mb-4"></i>
+                        <h4>Content Writing</h4>
+                        <p>Your content is more than just words on the page. It's smart, funny, and perfect for your audience. Our copywriters know how to speak to your customers in their own language, help you get clicks, build engagement, and boost your
+                            bottom line</p>
+                        <a class="readmore" href="#"><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3  services-card">
+                    <div class="box p-5">
+                        <i class="fas fa-search-dollar fa-3x mb-4"></i>
+                        <h4>SEO</h4>
+                        <p>We have a team of professionals, who are able to provide you with one-of-a-kind SEO services . Such services include keyword research, blog writing, link building, social media management etc If you need a boost to your website's
+                            presence online, we can help.</p>
+                        <a class="readmore" href="#"><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3  services-card">
+                    <div class="box p-5">
+                        <i class="fas fa-handshake-alt fa-3x mb-4"></i>
+                        <h4>PPC</h4>
+                        <p>PPC, or pay-per-click, is an online bidding process where the advertiser sets the maximum amount that they are willing to bid on any given keyword or phrase. The selected keywords are then published on search engine to increase
+                            the advertiser's exposure.</p>
+                        <a class="readmore" href="#"><span>Read More</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- how we work section -->
+    <div class="container">
+        <section id="steps">
+            <div class="text-center mb-5">
+
+                <h3 class=" text-dark service-about-heading " id="services-wlcm-abt-header">Let's Grow <span class="text_custom " style="color: #2C5364;">Your Business!</span></h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-light position-relative px-3 my-5">
+                        <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white" style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #2C5364">
+                            1
+                        </div>
+                        <div class="px-3 text-dark fw-bold text-center pb-3">
+                            <a href="#services-contact-form" class="text-decoration-none " style="color:#1c2541 ;">
+                                <h4 class="fw-bold">Register</h4>
+                            </a>
+
+
+                            <p class="fw-normal my-3">Fill the contact form given below by providing us your simple details like name, contact no. and emailID.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-light position-relative px-3 my-5">
+                        <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white" style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #2C5364">
+                            2
+                        </div>
+                        <div class="px-3 text-center fw-bold text-dark pb-3">
+                            <h4 class="fw-bold">Call</h4>
+                            <p class="fw-normal my-3">We will arrange a call with you for further discussion of your specific requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-light position-relative px-3 my-5">
+                        <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white" style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #2C5364">
+                            3
+                        </div>
+                        <div class="px-3 text-dark fw-bold text-center pb-3">
+                            <h4 class="fw-bold">Proposal</h4>
+                            <p class="fw-normal my-3">We will send you the proposal explaining the best budget for your specifications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-light position-relative px-3 my-5">
+                        <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white" style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #2C5364">
+                            4
+                        </div>
+                        <div class="px-3 text-dark fw-bold text-center pb-3">
+                            <h4 class="fw-bold">Done!</h4>
+                            <p class="fw-normal my-3">And done!! We will start working on your project with a roller coaster speed and remarkable quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- contact us now small division  -->
+    <div class="row d-flex mt-5  justify-content-center align-items-center text-center contact-us-section services-faq-ques">
+        <div class="col-md-5 d-none d-lg-flex mx-auto text-center justify-content-center align-items-center">
+            <h2 class=" fw-bold contact_us_heading text-white " style="font-size: 40px;">Have a Project. Let's Talk!
+            </h2>
+        </div>
+        <div class="col-md-4 col-sm-12 justify-content-center  text-center mx-auto  " style="margin-top: -20px;">
+            <button class="mt-2 btn btn-lg btn-light fw-bold">
+                    <a href="#services-contact-form" class="text-decoration-none " style="color:#1c2541 ;">Contact Us
+                        Now</a>
+                </button>
+
+        </div>
+    </div>
+
+    <!-- testimonial section -->
+
+    <div class="container">
+        <section class="testimonials-wrapper">
+            <div class="container">
+                <div class="text-center ">
+                    <h3 class="font-weight-bold text-dark service-about-heading ">What our <span class="text_custom " style="color: #2C5364; ">Clients Say?</span></h3>
+                </div>
+                <!-- <div class="separator "></div> -->
+            </div>
+            <div id="demo2 " class="two-item-carousel owl-carousel owl-theme ">
+
+                <!--Testimonial Block-->
+                <div class="testimonial-block ">
+                    <div class="inner-box " style="min-height: 390px;">
+                        <div class="image "> <img src="https://i.ibb.co/jDxHfwJ/Clients-Says2.png " alt=" " /> </div>
+                        <div class="content ">
+                            <i class="fas fa-quote-right "></i>
+                            <div class="author-info ">Lorem Ipsum <span>/ Managerment at Lorem Ipsum</span></div>
+                            <div class="text ">Coden Live was a great partner in crime during our campaign. They were extremely helpful and flexible with the many changes, challenges, and requests we threw their way.</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Testimonial Block-->
+                <div class="testimonial-block ">
+                    <div class="inner-box " style="min-height: 390px;">
+                        <div class="image "> <img src="https://i.ibb.co/BtD6Qgx/Clients-Says1.png " alt=" " /> </div>
+                        <div class="content ">
+                            <i class="fas fa-quote-right "></i>
+                            <div class="author-info ">Lorem Ipsum <span>/ CEO at Lorem Ipsum</span></div>
+                            <div class="text ">I'm impressed by the team's ability to quickly understand what we're trying to accomplish and then translate that into a digital marketing strategy. I highly recommend Coden Live to anyone looking to develop or refine their
+                                online presence.</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Testimonial Block-->
+                <div class="testimonial-block ">
+                    <div class="inner-box " style="min-height: 390px;">
+                        <div class="image "> <img src="https://i.ibb.co/jDxHfwJ/Clients-Says2.png " alt=" " /> </div>
+                        <div class="content ">
+                            <i class="fas fa-quote-right "></i>
+                            <div class="author-info ">Lorem Ipsum <span>/ Managerment at Lorem Ipsum</span></div>
+                            <div class="text ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- why are we different section -->
+    <section>
+        <div class="row py-5 px-4 px-sm-4 px-md-0 animated text-white">
+            <div class="h1 col-12  animated-1 col-sm-12 col-md-6 why-diff-heading">
+                <span data-aos="fade-up" data-aos-delay="300" class=" why-diff-span ">WHY </span>
+                <span data-aos="fade-up" data-aos-delay="500" class=" why-diff-span ">ARE WE </span>
+                <span data-aos="fade-up" data-aos-delay="700" class=" why-diff-span "> DIFFERENT?</span>
+            </div>
+
+
+
+            <div class="text-paragraph animated-2 col-12 col-sm-12 col-md-5">
+                Coden Live is more than just a web development or digital marketing company. We are a sophisticated Service that provides really Personalised Content so customers are sure to remember you. We are different because our goal is to create an adaptive ecosystem
+                of specialties that will solve all your business needs. We are an integrated, full-cycle digital marketing services provider. We design, build, test and market your product/service, including everything from concept to launch. Our solution
+                is customised per product. We are the only cybersecurity solutions provider empowering the digital marketing team to take actionable steps against today’s increasing online attacks making us the most reliable digital marketing company
+                with 100% accountability!
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- why you should choose us section -->
+    <div class="container my-5">
+        <section>
+            <div class="text-center mb-5 col-md-10 mx-auto">
+                <h3 class="font-weight-bold text-dark service-about-heading">WE <span class="text_custom" style="color: #2C5364;">ARE...</span></h3>
+                <p class="mx-5 text-secondary fw-bold">A company that knows about online outreach, can provide cost-effective solutions, and can create ground-breaking strategies designed to push you ahead of your competition.</p>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 my-4 ">
+
+                    <div class="px-3 py-3 bg-light why-us-cards">
+                        <div class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3" style="width: 60px;height: 60px;">
+                            <i class="fas fa-fingerprint fa-3x" style="color: #2C5364;"></i>
+                        </div>
+                        <div class="px-3 text-center pb-3">
+                            <h5 class="text-uppercase" style="font-weight: 600">Unique </h5>
+                            <p class="font-weight-light my-3">Innovative marketing ideas for your targeted audience, personalized content creation and execution.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-4   ">
+
+                    <div class="px-3 py-3 text-white why-us-cards" style=" background: #0F2027;
+                    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);">
+                        <div class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3" style="width: 60px;height: 60px;">
+                            <i class="fas fa-hand-holding-usd fa-3x mb-4"></i>
+
+                        </div>
+                        <div class="px-3 text-center pb-3">
+                            <h5 class="text-uppercase" style="font-weight: 600">Affordable</h5>
+                            <p class="font-weight-light my-3">Our team of professionals will find the best and inexpensive solution for your business at an affordable price</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-4  ">
+
+                    <div class="px-3 py-3 bg-light why-us-cards">
+                        <div class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3" style="width: 60px;height: 60px;">
+                            <i class="fas fa-chart-line fa-3x" style="color: #2C5364;"></i>
+
+                        </div>
+                        <div class="px-3 text-center pb-3">
+                            <h5 class="text-uppercase" style="font-weight: 600">Resourceful</h5>
+                            <p class="font-weight-light my-3"> Your marketing will be matched to its ideal audience, creating an open channel with higher touch points.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- why are we different section -->
+    <section>
+        <div class="row pb-5 pt-3 px-4 px-sm-4 px-md-0 animated text-white">
+            <div class="h1 col-12  animated-1 col-sm-12 col-md-12 why-diff-heading mb-4 " style="text-align: center;">
+                <span data-aos="fade-up" data-aos-delay="300" class=" why-diff-span ">WHY US? </span>
+                <!-- <span data-aos="fade-up" data-aos-delay="500" class=" why-diff-span ">YOU SHOULD </span> -->
+                <!-- <span data-aos="fade-up" data-aos-delay="700" class=" why-diff-span " >  US?</span> -->
+            </div>
+
+
+
+            <div class="text-paragraph animated-2 col-12 col-sm-12 col-md-10">
+                Marketing that goes beyond traditional methods and ideas. Using marketing technologies like automated campaign management dashboards, we have the capability to dynamically adjust your campaign, based on live user behaviors. Our advanced data analysis
+                and optimization techniques ensure you will always be focused on converting real-time customers ... Being a full-service digital agency allows us to help you with all aspects of online marketing, rather than just one aspect like some other
+                companies do. And finally, it is always about the ROI. We are with you every step of the way to make sure your investment in digital marketing is necessary and valuable for your business.
+                <br><br> When it comes to a digital marketing company, the choice can be overwhelming. You need a company that can handle your entire campaign for lead generation or Impersonalization (Online Reputation Management), like Coden Live does
+                - or you need a few experts under one umbrella, also expertly handled by Coden Live. Or you need a team that can help develop a powerful digital brand presence and drive traffic straight to your business. Coden Live offers all marketing
+                services that essentially focus on helping businesses grow with bringing your brand online and into the spotlight!
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- faq section -->
+    <div class="container">
+        <div class="pt-24">
+            <div class=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
+
+                <div class="text-center">
+                    <h3 class="font-weight-bold text-dark service-about-heading">Frequently Asked <span class="text_custom" style="color: #2C5364;">Questions</span></h3>
+                </div>
+
+                <div class="mt-20">
+                    <ul class="">
+
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class=" p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium">Do I need a website?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-left" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-gray-700 text-sm">The short answer is yes! With the popularity of the internet, everyday there are more consumers who choose to shop on-line first. Whether just doing research or actually purchasing on-line, your business will benefit
+                                        by having a web page. Businesses without an internet presence waste up too much of their revenues on missed sales. And still think you don't need one? Get email addresses for your current customers and use the opt
+                                        in box to collect information about future products or services they would like to receive updates on.
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class=" p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium">Why is digital marketing important ?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-right" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-gray-700 text-sm">With a click of a mouse, a post on social media, or a tap on a mobile device, businesses can reach new customers on a global scale. This makes digital marketing powerful and effective. Every brand needs an online presence
+                                        in order to survive in this day and age. You don't live under a rock, so you already know how important it is to be where your target audience is today.
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class="bg-gray-100 p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium">What is SEO?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-left" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-gray-700 text-sm">Search Engine Optimization has a lot to offer both small and relatively well-established businesses. SEO helps establish a web presence by allowing ranking for various keywords and phrases that relate to the business'
+                                        services or product offerings. This helps bring traffic to a site from "organic" sources such as Google, Bing or Yahoo, as opposed to traffic acquired from PPC advertising programs such as AdWords, which can be
+                                        very expensive. In fact, it's been proven that after a company hires an SEO firm which administers a strong SEO campaign – the positive results outweigh the costs of the campaign by a substantial margin.
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class="bg-gray-100 p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium ">What is the difference between local and organic SEO?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-right" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-dark text-sm">There is often confusion about the difference between local and organic search engine optimization (SEO). Local SEO optimizes your website to be more successful in local searches. Organic SEO works to increase your
+                                        website's ranking in results for popular search terms. For example, organic SEO helps you show up if someone searches "coffee shop." Local SEO works for searches like "coffee shops near me." You can use both types
+                                        of SEO at the same time to improve your online presence.
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class="bg-gray-100 p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium ">Why is Security important in the field of digital marketing ?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-left" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-dark text-sm">Security is not always exciting, but it is necessary. Security is everywhere. Every time you access your bank account online or use your passport to go through airport security or use any form of payment over the internet,
+                                        you are letting third parties take care of the details so you don't have to worry. While encryption and other security measures used in digital marketing can be complicated to understand, they're actually pretty
+                                        simple in principle. There are many types of encoding that you use every day in life that serve the same purpose, like passwords to keep your information safe, or warding spells in stories like Harry Potter to protect
+                                        your family from Voldemort
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class="bg-gray-100 p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium ">What is the difference between local and organic SEO?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-right" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-dark text-sm">There is often confusion about the difference between local and organic search engine optimization (SEO). Local SEO optimizes your website to be more successful in local searches. Organic SEO works to increase your
+                                        website's ranking in results for popular search terms. For example, organic SEO helps you show up if someone searches "coffee shop." Local SEO works for searches like "coffee shops near me." You can use both types
+                                        of SEO at the same time to improve your online presence.
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class="bg-gray-100 p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium ">How do we build your brand with our digital marketing services ?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-left" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-dark text-sm">Built In-House, For In-House: It starts with a branding audit—our clients are surprised at the value we deliver here. Then we create your new website, and develop your social media presence. Once your brand is established,
+                                        we grow it. By continuously implementing SEO best practices and listening to what our community is looking for, we help build lasting relationships with potential clients. Our team will work with you through every
+                                        step of the way to ensure that you have a positive experience before, during, and after the creation of your new brand.
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class="bg-gray-100 p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium ">How does a website increase sales?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-right" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-dark text-sm">You want to track your website activity so you can tell if it’s doing what you want it to do. Is it converting more visitors into leads? Are they arriving at checkout? It only takes three steps to have a site that’s
+                                        tracking anything and everything you could ever want to know about the most important asset you own - your website.
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="text-left mb-10">
+                            <div class="flex flex-row items-start mb-5">
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 me-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;" class="fas fa-question fa-2x"></i>
+                                </div>
+                                <div class="bg-gray-100 p-3 w-full flex items-center services-faq-ques">
+                                    <h4 class="text-md leading-6 font-medium ">Is It Worth Hiring A Digital Marketing Agency?
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-start" data-aos="slide-left" data-aos-duration="500">
+                                <div class="bg-white p-3 w-full flex items-center">
+                                    <p class="text-dark text-sm">To continually grow and scale your business, you need to be in complete control of your marketing. This is where we come in. By outsourcing your marketing to a digital agency, you can work hand-in-hand with our team
+                                        of SEO Expert and Social Media Experts who will ensure you get long term return on investment from each digital marketing campaign. You don’t have to worry about putting your digital marketing on autopilot. We know
+                                        the importance of keeping up with the latest trends that bring results. Doing this is literally our job, so you don’t have to worry about these issues! We have an extremely important mission at Coden Live – we want
+                                        to help as many businesses as possible grow their online presence by ranking high on Google
+                                    </p>
+                                </div>
+                                <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 ms-3" style="width: 60px;height: 55px; background-color: #2C5364 ">
+                                    <i style="color: #fff;transform: scaleX(-1);" class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Our team section -->
+    <div class="container">
+        <section class="our-team-section mb-5">
+            <h3 class="font-weight-bold text-dark service-about-heading">Our <span class="text_custom" style="color: #2C5364;">Team</span></h3>
+
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="https://i.ibb.co/8x9xK4H/team.jpg">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Arshdeep Singh</h3>
+                                <span class="post fw-bold">Digital Marketing Head</span>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="https://i.ibb.co/8x9xK4H/team.jpg">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Chetan Khanna</h3>
+                                <span class="post fw-bold">Senior App Developer</span>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="https://i.ibb.co/8x9xK4H/team.jpg">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Maninder Kaur</h3>
+                                <span class="post fw-bold">Senior Web Developer </span>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="https://i.ibb.co/8x9xK4H/team.jpg">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Sanchay Singh</h3>
+                                <span class="post fw-bold">Cyber Security Head</span>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+    <!-- contact us section -->
+    <div class="container">
+        <div class="form-base mb-5 " id="services-contact-form">
+
+            <div class="container-form mt-5 d-flex  justify-content-center mb-3 py-5">
+                <div class="form-container d-flex justify-content-center">
+                    <div class="left-container d-lg-flex d-none">
+                        <div class="left-inner-container">
+                            <h1 class="h2-form">Let's Chat</h1>
+                            <h5>Whether you have a question, want to start a project or simply want to connect.</p>
+                                <br>
+                                <h5>Feel free to send us a message in the contact form</h5>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <div class="right-inner-container">
+                            <form method="post" action="{% url 'contact_post' %}">
+                                {% csrf_token %}
+                                <h2 class="lg-view display-5 msg">Contact Us</h2>
+                                <h2 class="sm-view display-5  msg  ">Let's Chat</h2>
+
+                                <input type="text" placeholder="Name *" name="name" class="services-contact-input text-3xl text-black-50 my-2" />
+                                <input type="email" placeholder="Email *" name="email" class="services-contact-input text-3xl text-black-50 my-2" />
+                                <input type="phone" placeholder="Phone" name="phone" class="services-contact-input text-3xl text-black-50 my-2" />
+                                <textarea rows="4" placeholder="Message" name="message" class="services-contact-input text-3xl text-black-50 my-2"></textarea>
+                                <button class="button-form btn btn-lg mt-3">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer section -->
+    <footer id="footer" class="footer-dark sticky-bottom">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="{% host_url 'courses' host 'www' %}">Courses</a></li>
+                        <li> <a {% if user.is_authenticated %} href="livecoden@gmail.com" {% else %} href="{% host_url  'login' host 'www' %}" {% endif %}> QnA</a></li>
+                        <li><a href="{% host_url  'compiler' host 'www' %}">Run Code Online</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <!-- <li>&nbsp;Hiring now</li> -->
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Coden Live</h3>
+                    <p style="font-size:larger;">Coden Live is the leading Digital Marketing Agency in Delhi, and help businesses leverage the full potential of digital marketing. We bring to table a blend of advanced expertise and innovative thinking for your digital marketing journey.<br><br></p>
+                </div>
+                <div class="col item social">
+                    <a href="https://www.facebook.com/coden.live" target="_blank"><i class="icon fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/CodenLive" target="_blank"><i class="icon fab fa-twitter"></i></a>
+                    <a href="https://github.com/LiveCoden" target="_blank"><i class="icon fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/codenlive" target="_blank"><i class="icon fab fa-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Coden Live Â© 2021</p>
+        </div>
+    </footer>
+
+
+    <script>
+        let offset = $("#services-wlcm-abt-header ").offset().top
+        $(window).scroll(() => {
+            if (window.pageYOffset > offset - 200) {
+                // console.log('mmmm')
+                // .service-about-btn
+                $()
+            }
+            console.log('yyyyyy')
+        })
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

@@ -1,38 +1,20 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}
-Home | Coden Live
-{% endblock title %}
-
-{% block can %}
-<link rel="canonical" href="https://www.coden.live/" />
-{% endblock can %}
-
-{% block tags %}
+{% extends 'base.html' %} {% load static %} {% block title %} Home | Coden Live {% endblock title %} {% block can %}
+<link rel="canonical" href="https://www.coden.live/" /> {% endblock can %} {% block tags %}
 
 
 <meta name="title" content="Coden Live 🦁💻| Learn Coding Online | Certificate Courses">
-<meta name="description"
-    content="Coden Live is an e - learning platform which offers wide variety of live courses to young learners. We provide flexible, affordable and job relevant online training.">
+<meta name="description" content="Coden Live is an e - learning platform which offers wide variety of live courses to young learners. We provide flexible, affordable and job relevant online training.">
 <meta name="keywords" content="coden live,codenlive, cerficate courses, online coding courses, learn coding Live.">
 <meta name="author" content="Chetan Khanna, Arshdeep Singh, Maninder kaur">
-<meta name="p:domain_verify" content="794b621c761d857b37a348c0bc90fc05"/>
-
-{% endblock tags %}
-
-{% block header %}
+<meta name="p:domain_verify" content="794b621c761d857b37a348c0bc90fc05" /> {% endblock tags %} {% block header %}
 
 <div class="carousel slide flow" data-bs-ride="carousel" id="carousel-1">
     <div class="carousel-inner">
-        <div class="carousel-item active"><img class="w-100 d-block"
-                src="{% static 'img/Online courses coden live.webp' %}" alt="coden live slider-1"></div>
-        <div class="carousel-item"><img class="w-100 d-block"
-                src="{% static 'img/Learn coding online with coden live.webp' %}" alt="coden live slider-2"></div>
+        <div class="carousel-item active"><img class="w-100 d-block" src="{% static 'img/Online courses coden live.webp' %}" alt="coden live slider-1"></div>
+        <div class="carousel-item"><img class="w-100 d-block" src="{% static 'img/Learn coding online with coden live.webp' %}" alt="coden live slider-2"></div>
     </div>
     <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span
-                class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a
-            class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span
+                class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span
                 class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
     <ol class="carousel-indicators">
         <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
@@ -40,503 +22,425 @@ Home | Coden Live
     </ol>
 </div>
 
-{% endblock header %}
-{% block content %}
-
-{% include 'partials/alerts.html' %}
+{% endblock header %} {% block content %} {% include 'partials/alerts.html' %}
 
 <div class="container">
 
-<div class="col mt-1 welcome " data-aos="fade" data-aos-duration="600" data-aos-delay="600" >
-    <h1  style="text-align: center;margin-bottom: 20px;margin-top:1%;padding-left:2%">Welcome to Coden 
-    </h1>
-</div>
+    <div class="col mt-1 welcome " data-aos="fade" data-aos-duration="600" data-aos-delay="600">
+        <h1 style="text-align: center;margin-bottom: 20px;margin-top:1%;padding-left:2%">Welcome to Coden
+        </h1>
+    </div>
 
-    
-<div class="main-bg-card" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
-    style="margin-bottom: 5%;">
-    
-    <div class="row text-center px-2 d-flex justify-content-around"
-        style="color: rgb(255, 255, 255); margin-left:0;margin-right:0">
 
-        <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="main-card-background card" data-bss-hover-animate="pulse"
-                style="margin-bottom: 15px;margin-top: 15px;">
-                <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
-                        class="main-card-icon fas fa-book-reader"></i>
-                    <h4 class="card-title main-card-title">Courses</h4>
-                    <p class="card-text main-card-text">From basic to advanced. All courses
-                        are available here</p>
-                    <a href="{% url 'courses' %}">
-                        <button class="btn btn-secondary" type="button"
-                            style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Enroll
+    <div class="main-bg-card" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="margin-bottom: 5%;">
+
+        <div class="row text-center px-2 d-flex justify-content-around" style="color: rgb(255, 255, 255); margin-left:0;margin-right:0">
+
+            <div class="col col-xs-12 col-sm-6 col-md-6">
+                <div class="main-card-background card" data-bss-hover-animate="pulse" style="margin-bottom: 15px;margin-top: 15px;">
+                    <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i class="main-card-icon fas fa-book-reader"></i>
+                        <h4 class="card-title main-card-title">Courses</h4>
+                        <p class="card-text main-card-text">From basic to advanced. All courses are available here</p>
+                        <a href="{% url 'courses' %}">
+                            <button class="btn btn-secondary" type="button" style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Enroll
                             Now</button>
 
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="main-card-background card" data-bss-hover-animate="pulse"
-                style="margin-bottom: 15px;margin-top: 15px;">
-                <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
-                        class="main-card-icon fas fa-laptop-code"></i>
-                    <h4 class="card-title main-card-title">Compiler</h4>
-                    <p class="card-text main-card-text">Compiler support for students testing their code</p>
-                    <a href="{% url 'compiler' %}">
-                        <button class="btn btn-secondary" type="button"
-                            style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Code
+            <div class="col col-xs-12 col-sm-6 col-md-6">
+                <div class="main-card-background card" data-bss-hover-animate="pulse" style="margin-bottom: 15px;margin-top: 15px;">
+                    <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i class="main-card-icon fas fa-laptop-code"></i>
+                        <h4 class="card-title main-card-title">Compiler</h4>
+                        <p class="card-text main-card-text">Compiler support for students testing their code</p>
+                        <a href="{% url 'compiler' %}">
+                            <button class="btn btn-secondary" type="button" style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Code
                             Now</button>
 
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="main-card-background card" data-bss-hover-animate="pulse"
-                style="margin-bottom: 15px;margin-top: 15px;">
-                <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
-                        class="main-card-icon fas fa-blog"></i>
-                    <h4 class="card-title main-card-title">Blogs</h4>
-                    <p class="card-text main-card-text">Students can share their knowledge through our blogs</p>
-                    <a href="{% url 'courses' %}">
+            <div class="col col-xs-12 col-sm-6 col-md-6">
+                <div class="main-card-background card" data-bss-hover-animate="pulse" style="margin-bottom: 15px;margin-top: 15px;">
+                    <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i class="main-card-icon fas fa-blog"></i>
+                        <h4 class="card-title main-card-title">Blogs</h4>
+                        <p class="card-text main-card-text">Students can share their knowledge through our blogs</p>
+                        <a href="{% url 'courses' %}">
 
 
-                        <button class="btn btn-secondary"  type="button"
-                            style="background:rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Coming
+                            <button class="btn btn-secondary" type="button" style="background:rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Coming
                             Soon</button>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="col col-xs-12 col-sm-6 col-md-6">
-            <div class="main-card-background card" data-bss-hover-animate="pulse"
-                style="margin-bottom: 15px;margin-top: 15px;">
-                <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i
-                        class="main-card-icon fas fa-chalkboard-teacher"></i>
-                    <h4 class="card-title main-card-title">Q n A</h4>
-                    <p class="card-text main-card-text">24/7 doubt solving with professional TAs</p>
+            <div class="col col-xs-12 col-sm-6 col-md-6">
+                <div class="main-card-background card" data-bss-hover-animate="pulse" style="margin-bottom: 15px;margin-top: 15px;">
+                    <div class="card-body text-center" style="color: rgba(237,245,244,0.69);border-radius: 132px;"><i class="main-card-icon fas fa-chalkboard-teacher"></i>
+                        <h4 class="card-title main-card-title">Q n A</h4>
+                        <p class="card-text main-card-text">24/7 doubt solving with professional TAs</p>
 
-                    <a {% if user.is_authenticated %} href="mailto:livecoden@gmail.com" {% else %}
-                        href="{% url 'login' %}" {% endif %}>
+                        <a {% if user.is_authenticated %} href="mailto:livecoden@gmail.com" {% else %} href="{% url 'login' %}" {% endif %}>
 
-                        <button class="btn btn-secondary" type="button"
-                            style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Solve
+                            <button class="btn btn-secondary" type="button" style="background: rgba(23,187,158,0.69);border-radius: 80px;border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;padding: 13px;min-width: 182px;">Solve
                             Now</button>
-                    </a>
+                        </a>
 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="row d-flex justify-content-center align-items-center align-content-center align-self-center flow" data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" style="opacity: 0.70;margin-bottom: 5%;padding-right: 5%;padding-left: 5%;padding-bottom: 3%;padding-top: 3%;">
+        <div class=" col-sm-12 col-12" style="transform: perspective(590px);">
+            <h3 class="section-heading">
+                Why You Should Choose Us?
+                <hr class="section-divider text-center mx-auto">
+            </h3>
+            <div class="row">
+                <div class="col">
+                    <p class="main-prom-text">Still thinking how to code? Or want to learn secret SEO techniques and create bots. We got you covered. Coden brings you amazing courses so that you don't need to hold your creativity.
+                        <br></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="main-prom-text">Not only this, we have created compilers and blogs so that you don't have to be messing around and work straight.<br></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="main-prom-text">With coden you get a one stop platform for all your needs. A platform created by young developers for upcoming developers.<br></p>
                 </div>
             </div>
         </div>
+        <div class="col-md-6" style="color: var(--bs-pink);flex-direction:column">
+            <div class="row gy-6   cont">
+                <div class="col col-12   cont" style="margin-top: 8%;">
 
+                    <i class="fas main-icon-prom fa-code d-inline-block"></i>
+                    <p class="d-inline-block main-prom-col-text">Promoting Coding Culture</p>
+
+
+                </div>
+            </div>
+            <div class="row gy-6 ">
+                <div class="col col-12 cont " style="margin-top: 8%;"><i class="fas main-icon-prom fa-video d-inline-block"></i>
+                    <p class="d-inline-block main-prom-col-text">Regular Webinars</p>
+                </div>
+            </div>
+            <div class="row gy-6">
+                <div class="col col-12 cont" style="margin-top: 8%;">
+                    <i class="fas main-icon-prom fa-check d-inline-block"></i>
+                    <p class="d-inline-block main-prom-col-text">Learning from Basics</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-start">
+            <div class="row gy-6">
+                <div class="col col-12 cont" style="margin-top: 8%;">
+                    <i class="fas main-icon-prom fa-chalkboard-teacher d-inline-block"></i>
+                    <p class="d-inline-block main-prom-col-text">Instant Doubt Solving</p>
+                </div>
+            </div>
+            <div class="row gy-6">
+                <div class="col col-12 cont" style="margin-top: 8%;">
+                    <i class="fas main-icon-prom fa-file-code d-inline-block"></i>
+                    <p class="d-inline-block main-prom-col-text">Compiler Support</p>
+                </div>
+            </div>
+            <div class="row gy-6">
+                <div class="col col-12 cont" style="margin-top: 8%;">
+                    <i class="fas fa-user-check main-icon-prom d-inline-block"></i>
+                    <p class="d-inline-block main-prom-col-text">Best in Class Mentors</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-</div>
-
-
-<div class="row d-flex justify-content-center align-items-center align-content-center align-self-center flow"
-    data-aos="flip-up" data-aos-duration="300" data-aos-delay="300"
-    style="opacity: 0.70;margin-bottom: 5%;padding-right: 5%;padding-left: 5%;padding-bottom: 3%;padding-top: 3%;">
-    <div class=" col-sm-12 col-12" style="transform: perspective(590px);">
+    <section data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" class="team-boxed flow" style="opacity: 0.90;color: var(--bs-light);background:transparent">
         <h3 class="section-heading">
-            Why You Should Choose Us?
-           <hr class="section-divider text-center mx-auto">
-      </h3>        <div class="row">
-            <div class="col">
-                <p class="main-prom-text">Still thinking how to code? Or want to learn secret SEO techniques and create
-                    bots. We got you covered. Coden brings you amazing courses so that you don't need to hold your
-                    creativity.<br></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p class="main-prom-text">Not only this, we have created compilers and blogs so that you don't have to
-                    be messing around and work straight.<br></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p class="main-prom-text">With coden you get a one stop platform for all your needs. A platform
-                    created by young developers for upcoming developers.<br></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6" style="color: var(--bs-pink);flex-direction:column">
-        <div class="row gy-6   cont">
-            <div class="col col-12   cont" style="margin-top: 8%;">
-
-                <i class="fas main-icon-prom fa-code d-inline-block"></i>
-                <p class="d-inline-block main-prom-col-text">Promoting Coding Culture</p>
-
-
-            </div>
-        </div>
-        <div class="row gy-6 ">
-            <div class="col col-12 cont " style="margin-top: 8%;"><i
-                    class="fas main-icon-prom fa-video d-inline-block"></i>
-                <p class="d-inline-block main-prom-col-text">Regular Webinars</p>
-            </div>
-        </div>
-        <div class="row gy-6">
-            <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas main-icon-prom fa-check d-inline-block"></i>
-                <p class="d-inline-block main-prom-col-text">Learning from Basics</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 text-start">
-        <div class="row gy-6">
-            <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas main-icon-prom fa-chalkboard-teacher d-inline-block"></i>
-                <p class="d-inline-block main-prom-col-text">Instant Doubt Solving</p>
-            </div>
-        </div>
-        <div class="row gy-6">
-            <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas main-icon-prom fa-file-code d-inline-block"></i>
-                <p class="d-inline-block main-prom-col-text">Compiler Support</p>
-            </div>
-        </div>
-        <div class="row gy-6">
-            <div class="col col-12 cont" style="margin-top: 8%;">
-                <i class="fas fa-user-check main-icon-prom d-inline-block"></i>
-                <p class="d-inline-block main-prom-col-text">Best in Class Mentors</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<section data-aos="flip-up" data-aos-duration="300" data-aos-delay="300" class="team-boxed flow"
-    style="opacity: 0.90;color: var(--bs-light);background:transparent">
-    <h3 class="section-heading">
-        Our Team
-       <hr class="section-divider text-center mx-auto">
-  </h3>
-        <div class="row text-center px-4 d-flex flex-row justify-content-center align-items-center align-content-center align-self-center people"
-            style="text-align: center;">
+            Our Team
+            <hr class="section-divider text-center mx-auto">
+        </h3>
+        <div class="row text-center px-4 d-flex flex-row justify-content-center align-items-center align-content-center align-self-center people" style="text-align: center;">
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="{% static 'img/arshdeep singh.png' %}"
-                        alt="Co-founder coden live arshdeep singh">
+                <div class="box"><img class="rounded-circle" src="{% static 'img/arshdeep singh.png' %}" alt="Co-founder coden live arshdeep singh">
                     <h3 class="name" style="color: #2a1f1f;">Arshdeep Singh</h3>
                     <p class="title">Co-founder</p>
-                    <p class="description description-team">Digital Marketer/Researcher, with an aim of building and implementing
-                        strategies focused on SEO.<br></p>
+                    <p class="description description-team">Digital Marketer/Researcher, with an aim of building and implementing strategies focused on SEO.<br></p>
                     <div class="social"><a href="#"><i class="fas fa-envelope"></i></a><a href="#"><i
                                 class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-github"></i></a></div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="{% static 'img/maninder kaur.jpg' %}"
-                        alt="Co-founder coden live maninder kaur"
-                        style="text-align: justify;margin-right: 0;height: 160px;width: 150px;">
+                <div class="box"><img class="rounded-circle" src="{% static 'img/maninder kaur.jpg' %}" alt="Co-founder coden live maninder kaur" style="text-align: justify;margin-right: 0;height: 160px;width: 150px;">
                     <h3 class="name" style="color: #2a1f1f;">Maninder Kaur</h3>
                     <p class="title"><strong>CO-FOUNDER</strong></p>
-                    <p class="description description-team">Dedicated and efficient full stack developer with a passion of developing
-                        scalable web applications</p>
+                    <p class="description description-team">Dedicated and efficient full stack developer with a passion of developing scalable web applications</p>
                     <div class="social"><a href="#"><i class="fas fa-envelope"></i></a><a href="#"><i
                                 class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-github"></i></a></div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="{% static 'img/chetan khanna.jpg' %}"
-                        alt="Co-founder coden live Chetan Khanna" style="transform: scaleX(-1);">
+                <div class="box"><img class="rounded-circle" src="{% static 'img/chetan khanna.jpg' %}" alt="Co-founder coden live Chetan Khanna" style="transform: scaleX(-1);">
                     <h3 class="name" style="color: #2a1f1f;">Chetan Khanna</h3>
                     <p class="title"><strong>CO-FOUNDER</strong></p>
-                    <p class="description description-team">Proficient software developer and a competitive programmer with a passion for
-                        beating former "best yets".<br></p>
+                    <p class="description description-team">Proficient software developer and a competitive programmer with a passion for beating former "best yets".<br></p>
                     <div class="social"><a href="#"><i class="fas fa-envelope"></i></a><a href="#"><i
                                 class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-github"></i></a></div>
                 </div>
             </div>
         </div>
 
-</section>
-<section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 0.90;margin-right: 0px;padding-right: 0%;padding-left: 0%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
+    </section>
+    <section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 0.90;margin-right: 0px;padding-right: 0%;padding-left: 0%;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
 
 
-  
-<div class="carousel slide flow" data-bs-ride="carousel" id="carousel-t"
-    style="background: #3A506B;margin-top: 2%;">
-    <div class="carousel-inner" style="border-color: rgb(255,255,255);">
-        <div class="carousel-item active">
-            <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle"
-                    src="{% static 'img/testimonial1.jpg' %}" alt="testimonial-1" width="100"
-                    style="height: 100px;width: 100px;">
-                <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
-                <p class="text-center testi-rev">I enrolled in Web Development using
-                    ReactJs course in this lockdown. It was ‘fantastic’ , the learning curve increased exponentially.
-                    The instructor explained the concepts beautifully and cleared all the doubts within 24 hours&nbsp;
-                </p>
-                <p class="signature">Rohan Singh</p>
-                <p class="text-center date">April 12, 2021<br></p>
+
+        <div class="carousel slide flow" data-bs-ride="carousel" id="carousel-t" style="background: #3A506B;margin-top: 2%;">
+            <div class="carousel-inner" style="border-color: rgb(255,255,255);">
+                <div class="carousel-item active">
+                    <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle" src="{% static 'img/testimonial1.jpg' %}" alt="testimonial-1" width="100" style="height: 100px;width: 100px;">
+                        <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
+                        <p class="text-center testi-rev">I enrolled in Web Development using ReactJs course in this lockdown. It was ‘fantastic’ , the learning curve increased exponentially. The instructor explained the concepts beautifully and cleared all the doubts within 24 hours&nbsp;
+                        </p>
+                        <p class="signature">Rohan Singh</p>
+                        <p class="text-center date">April 12, 2021<br></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-9 text-center mx-auto testimonial-content"><img class="rounded-circle" src="{% static 'img/testimonial2.png' %}" alt="testimonial-2" width="100">
+                        <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
+                        <p class="text-center testi-rev">My pandemic turned out to be really well with Coden Live. Highly recommended to all those students looking for hands on experience of live classes. Mentors are really helpful and insightful
+                        </p>
+                        <p class="signature">Khushboo Tiwari</p>
+                        <p class="text-center date">Jan 16, 2021<br></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle" src="{% static 'img/testimonial3.png' %}" alt="testimonial-3" width="100">
+                        <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
+                        <p class="text-center testi-rev">Coden Live was an amazing experience for me. I belong to the maths department and had a little experience in coding but I think it has allowed me to think things through in a much more analytical manner.&nbsp;<br></p>
+                        <p class="signature">Sameer Jamal</p>
+                        <p class="text-center date">April 21, 2021<br></p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="carousel-item">
-            <div class="col-9 text-center mx-auto testimonial-content"><img class="rounded-circle"
-                    src="{% static 'img/testimonial2.png' %}" alt="testimonial-2" width="100">
-                <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
-                <p class="text-center testi-rev">My pandemic turned out to be really well with Coden Live. Highly recommended to
-                    all those students looking for hands on experience of live classes. Mentors are really helpful and
-                    insightful</p>
-                <p class="signature">Khushboo Tiwari</p>
-                <p class="text-center date">Jan 16, 2021<br></p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle"
-                    src="{% static 'img/testimonial3.png' %}" alt="testimonial-3" width="100">
-                <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
-                <p class="text-center testi-rev">Coden Live was an amazing experience for me. I belong to the maths department and
-                    had a little experience in coding but I think it has allowed me to think things through in a much
-                    more analytical manner.&nbsp;<br></p>
-                <p class="signature">Sameer Jamal</p>
-                <p class="text-center date">April 21, 2021<br></p>
-            </div>
-        </div>
-    </div>
-    <div style="background: transparent;"><a class="carousel-control-prev" href="#carousel-t" role="button"
-            data-bs-slide="prev" style="background: #3A506B;"><span
+            <div style="background: transparent;"><a class="carousel-control-prev" href="#carousel-t" role="button" data-bs-slide="prev" style="background: #3A506B;"><span
                 class="carousel-control-prev-icon" style="opacity: 0.70;"></span><span
-                class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-t"
-            role="button" data-bs-slide="next" style="background:#3A506B;"><span
+                class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-t" role="button" data-bs-slide="next" style="background:#3A506B;"><span
                 class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-    <ol class="carousel-indicators" style="background: #3A506B;">
-        <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="0" class="active"></li>
-        <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="1"></li>
-        <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="2"></li>
-    </ol>
-</div>
-</section>
+            <ol class="carousel-indicators" style="background: #3A506B;">
+                <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="0" class="active"></li>
+                <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="1"></li>
+                <li style="background-color: white;" data-bs-target="#carousel-t" data-bs-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
 
 
-<div class="row justify-content-center">
+    <div class="row justify-content-center">
 
-<div class="col-12 col-sm-12 col-md-10 col-lg-8">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-8">
 
-<div class="row justify-content-center  flow" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300"
-    style="background: transparent;opacity: 0.90;margin-right: 0px;;margin-left: 0px;padding-top: 2%;margin-bottom: 2%;">
-    
+            <div class="row justify-content-center  flow" data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 0.90;margin-right: 0px;;margin-left: 0px;padding-top: 2%;margin-bottom: 2%;">
 
-    <div class="col">
-        <h3 class="section-heading">
-            F.A.Q.
-           <hr class="section-divider text-center mx-auto">
-      </h3>
-    </div>
 
-    
+                <div class="col">
+                    <h3 class="section-heading">
+                        F.A.Q.
+                        <hr class="section-divider text-center mx-auto">
+                    </h3>
+                </div>
 
-        <div class="accordion accordion-flush"  id="main-accordian">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading-1">
-                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#item-1"
-                        aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+
+
+                <div class="accordion accordion-flush" id="main-accordian">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-heading-1">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#item-1" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
 
                         <strong>What is coden live?
                         </strong>
                         <span class="glyphicon glyphicon-plus"></span>
 
                     </button>
-                </h2>
-                <div id="item-1" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-heading-1">
-                    <div class="accordion-body">
-                        <p>
-                            Coden Live is an e-learning platform that offers a wide variety of online live courses to young learners. We also offer an online coding compiler and QnA for continuous support, it’s a one-stop solution portal for all programming geeks out there. We ensure the best learning experience for our students with flexible, affordable and job relevant online training to young individuals.
-                        </p>
+                        </h2>
+                        <div id="item-1" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-heading-1">
+                            <div class="accordion-body">
+                                <p>
+                                    Coden Live is an e-learning platform that offers a wide variety of online live courses to young learners. We also offer an online coding compiler and QnA for continuous support, it’s a one-stop solution portal for all programming geeks out there. We ensure
+                                    the best learning experience for our students with flexible, affordable and job relevant online training to young individuals.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading-2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#item-2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-heading-2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                         <strong>
                             What is a live course?
                         </strong>
                     </button>
-                </h2>
-                <div id="item-2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-2">
-                    <div class="accordion-body">
-                        <p>
-                            At Coden live, we focus on the concept of live courses, where our mentors interact with the students throughout the course for their deeper understanding of the most in-demand skills and technologies. All courses are interactive and include regular assignments in multiple modules for hands-on experience on live projects.
-                            </p>
+                        </h2>
+                        <div id="item-2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-2">
+                            <div class="accordion-body">
+                                <p>
+                                    At Coden live, we focus on the concept of live courses, where our mentors interact with the students throughout the course for their deeper understanding of the most in-demand skills and technologies. All courses are interactive and include regular assignments
+                                    in multiple modules for hands-on experience on live projects.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading-3">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#item-3" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-heading-3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-3" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                         <strong>What is the average batch size
                             of live courses at coden live?
 
                         </strong> </button>
-                </h2>
-                <div id="item-3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-3">
-                    <div class="accordion-body">
-                        <p>
-                            For a better understanding and personal interaction with students, we at Coden live maintain 1:5 mentor to student ratio
-                            </p>
+                        </h2>
+                        <div id="item-3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-3">
+                            <div class="accordion-body">
+                                <p>
+                                    For a better understanding and personal interaction with students, we at Coden live maintain 1:5 mentor to student ratio
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading-4">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#item-4" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-heading-4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-4" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                         <strong>What is the duration of each
                             class?
 
                         </strong> </button>
-                </h2>
-                <div id="item-4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-4">
-                    <div class="accordion-body">
-                        <p>
-                            Duration of each class would be 1 hour. It can stretch up to 1.5 hours at the maximum.
-                        </p>
+                        </h2>
+                        <div id="item-4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-4">
+                            <div class="accordion-body">
+                                <p>
+                                    Duration of each class would be 1 hour. It can stretch up to 1.5 hours at the maximum.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading-5">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#item-5" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-heading-5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-5" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                         <strong>How to get a demo class?
 
 
                         </strong> </button>
-                </h2>
-                <div id="item-5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-5">
-                    <div class="accordion-body">
-                        <p>
-                            You can go to a particular course page from the <a style="font-weight: bold;color:white;" href="{% url 'courses' %}">courses section </a>and click on get demo
+                        </h2>
+                        <div id="item-5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-5">
+                            <div class="accordion-body">
+                                <p>
+                                    You can go to a particular course page from the <a style="font-weight: bold;color:white;" href="{% url 'courses' %}">courses section </a>and click on get demo
 
-                        </p>
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
         </div>
     </div>
 
-</div>
-</div>
-
-<section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 1.0;margin-right: 0px;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
+    <section data-aos="flip-down" data-aos-duration="300" data-aos-delay="300" style="background: transparent;opacity: 1.0;margin-right: 0px;margin-left: 0px;padding-top: 2%;margin-bottom: 5%;">
 
 
-    <div class="col mt-1">
-        <h3 class="section-heading">
-            Job Oppurtunities
-           <hr class="section-divider text-center mx-auto">
-      </h3>
-    </div>
-
-    <div class="row sect d-flex justify-content-around">
-        <div class="col-12 col-md-5 mt-5 wwb">
-            <div class="card px-5 py-4 wwb-card ">
-                <h3 class="card-title mb-4">Front end developer</h3>
-               
-                <p class="card-text mb-4">
-                    One of the most demanding job profiles in the field of development
-                    . One can become a freelance web developer or make websites for
-                    a firm . As a front end web developer your job will include making
-                    or updating some beautiful and responsive websites for a company
-                    in the tech stack they want . Seems difficult ? Then start
-                    learning it with Coden Live then making beautiful websites will
-                    become your cup of tea.
-
-                </p>
-            </div>
-
+        <div class="col mt-1">
+            <h3 class="section-heading">
+                Job Oppurtunities
+                <hr class="section-divider text-center mx-auto">
+            </h3>
         </div>
-        <div class="col-12 col-md-5 mt-5 wwb ">
-            <div class="card px-5 py-4 wwb-card" >
-                <h3 class="card-title mb-4">Web Designer</h3>
-                <p class="card-text mb-4">
-                    Don't know how to code ? We at Coden Live make sure that we will deliver
-                    you the most easy and effective way of learning things . The tools that
-                    one will learn in this course will make sure that the student will be
-                    one will learn in this course will make sure that the student will be
-                    one will learn in this course will make sure that the student will be
 
-                    able to design websites and also make some static websites on their own.
-                </p>
+        <div class="row sect d-flex justify-content-around">
+            <div class="col-12 col-md-5 mt-5 wwb">
+                <div class="card px-5 py-4 wwb-card ">
+                    <h3 class="card-title mb-4">Front end developer</h3>
+
+                    <p class="card-text mb-4">
+                        One of the most demanding job profiles in the field of development . One can become a freelance web developer or make websites for a firm . As a front end web developer your job will include making or updating some beautiful and responsive websites for
+                        a company in the tech stack they want . Seems difficult ? Then start learning it with Coden Live then making beautiful websites will become your cup of tea.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-5 mt-5 wwb ">
+                <div class="card px-5 py-4 wwb-card">
+                    <h3 class="card-title mb-4">Web Designer</h3>
+                    <p class="card-text mb-4">
+                        Don't know how to code ? We at Coden Live make sure that we will deliver you the most easy and effective way of learning things . The tools that one will learn in this course will make sure that the student will be one will learn in this course will make
+                        sure that the student will be one will learn in this course will make sure that the student will be able to design websites and also make some static websites on their own.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row sect d-flex justify-content-around">
-        <div class=" col-12 col-md-5 mt-5 wwb">
-            <div class="card px-5 py-4 wwb-card">
-                <h3 class="card-title mb-4">Digital Marketing Manager</h3>
-                <p class="card-text mb-4">
-                    It is not quite wrong to say that this position is responsible
-                    for the digital presence of the firm . It is one of the highest
-                    paid position in the field of digital marketing which also
-                    requires some years of experience. One at this position is
-                    responsible for undertaking digital media campaigns, making and
-                    updating the website on a regular basis and improvising strategies
-                    that will attract traffic .
+        <div class="row sect d-flex justify-content-around">
+            <div class=" col-12 col-md-5 mt-5 wwb">
+                <div class="card px-5 py-4 wwb-card">
+                    <h3 class="card-title mb-4">Digital Marketing Manager</h3>
+                    <p class="card-text mb-4">
+                        It is not quite wrong to say that this position is responsible for the digital presence of the firm . It is one of the highest paid position in the field of digital marketing which also requires some years of experience. One at this position is responsible
+                        for undertaking digital media campaigns, making and updating the website on a regular basis and improvising strategies that will attract traffic .
 
-                </p>
+                    </p>
+                </div>
+            </div>
+            <div class=" col-12 col-md-5 mt-5 wwb">
+                <div class="card px-5 py-4 wwb-card">
+                    <h3 class="card-title mb-4">SEO Expert</h3>
+                    <p class="card-text mb-4">
+                        One of the most demanding positions in 2021 because who does not want good traffic and the firm’s website to rank #1 on google . One of the major roles of an SEO expert is to conduct keyword research , increase traffic , improve google rankings , research
+                        on SEO tools etc . Haven't heard about these words before ? Don't worry , we will make sure that you will learn about these terms in depth and become job ready.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class=" col-12 col-md-5 mt-5 wwb">
-            <div class="card px-5 py-4 wwb-card">
-                <h3 class="card-title mb-4">SEO Expert</h3>
-                <p class="card-text mb-4">
-                    One of the most demanding positions in 2021 because who does not
-                    want good traffic and the firm’s website to rank #1 on google .
-                    One of the major roles of an SEO expert is to conduct keyword
-                    research , increase traffic , improve google rankings ,
-                    research on SEO tools etc . Haven't heard about these words
-                    before ? Don't worry , we will make sure that you will learn
-                    about these terms in depth and become job ready.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="row sect d-flex justify-content-around">
-        <div class=" col-12 col-md-5 mt-5 wwb">
-            <div class="card px-5 py-4 wwb-card">
-                <h3 class="card-title mb-4">
-                    Database Analyst
-                </h3>
-                <p class="card-text mb-4">
-                    The database is a whole different world and it is a responsible
-                    task to manage huge data of the firms .The responsibility
-                    includes creating and managing the database, organizing data ,
-                    ensuring that the database runs efficiently and , securing data
-                    from unauthorized access etc . Seems difficult ? Don't worry , we
-                    will make sure that after learning from us , you will become
-                    ready for this position.
+        <div class="row sect d-flex justify-content-around">
+            <div class=" col-12 col-md-5 mt-5 wwb">
+                <div class="card px-5 py-4 wwb-card">
+                    <h3 class="card-title mb-4">
+                        Database Analyst
+                    </h3>
+                    <p class="card-text mb-4">
+                        The database is a whole different world and it is a responsible task to manage huge data of the firms .The responsibility includes creating and managing the database, organizing data , ensuring that the database runs efficiently and , securing data from
+                        unauthorized access etc . Seems difficult ? Don't worry , we will make sure that after learning from us , you will become ready for this position.
 
-                </p>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class=" col-12 col-md-5     mt-5 wwb">
-            <div class="card px-5 py-4 wwb-card">
-                <h3 class="card-title mb-4">Python Flask Developer</h3>
-                <p class="card-text mb-4">
-                    Modern web applications require backend connectivity and bots which
-                    is apparently a responsibility of a flask developer . The role
-                    includes making bots for different platforms , adding backend to
-                    the static websites of the firm and updating backend from time to
-                    time . Seems difficult ? Do not worry , It will seem much easier
-                    if you'll learn from us .
+            <div class=" col-12 col-md-5     mt-5 wwb">
+                <div class="card px-5 py-4 wwb-card">
+                    <h3 class="card-title mb-4">Python Flask Developer</h3>
+                    <p class="card-text mb-4">
+                        Modern web applications require backend connectivity and bots which is apparently a responsibility of a flask developer . The role includes making bots for different platforms , adding backend to the static websites of the firm and updating backend from
+                        time to time . Seems difficult ? Do not worry , It will seem much easier if you'll learn from us .
 
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </div>
 
 {% endblock content %}

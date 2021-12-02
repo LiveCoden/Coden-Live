@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'allauth.account',  
     'allauth.socialaccount',  
     'allauth.socialaccount.providers.google',
+    'django_hosts',
 ]
 
 MIDDLEWARE = [
+    'django_hosts.middleware.HostsRequestMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -52,9 +54,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_hosts.middleware.HostsResponseMiddleware'
 ]
 
 ROOT_URLCONF = 'coden.urls'
+ROOT_HOSTCONF = 'coden.hosts'
+DEFAULT_HOST = 'www'
+PARENT_HOST = 'localhost'
+HOST_PORT = '8000'
+
 
 TEMPLATES = [
     {
@@ -127,6 +135,7 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
 
 
 # Messages
