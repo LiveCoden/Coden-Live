@@ -318,11 +318,9 @@
     }
     
     .contact-us-section {
-        background-image: linear-gradient(#232d4dc5, rgba(23, 29, 46, 0.885)), url('https://image.shutterstock.com/image-illustration/website-internet-contact-us-page-260nw-1056676853.jpg');
-        background-size: cover;
+        /* background-size: cover; */
         /* min-height: 30vh; */
-        height: 150px;
-        min-width: 100vh;
+        width: 100%;
     }
     
     .services-abt-icon-1,
@@ -367,9 +365,6 @@
         }
         .service_header_vec {
             transform: scale(-1);
-        }
-        .contact-us-section {
-            min-width: max-content;
         }
     }
     
@@ -615,7 +610,6 @@
         .services-header {
             min-height: 10px;
             height: 400px;
-            border: 1px solid red !important;
             /* background-attachment: fixed; */
             /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
