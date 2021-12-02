@@ -60,8 +60,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'coden.urls'
 ROOT_HOSTCONF = 'coden.hosts'
 DEFAULT_HOST = 'www'
-PARENT_HOST = 'localhost'
-HOST_PORT = '8000'
+PARENT_HOST = 'coden.live'
+# HOST_PORT = '8000'
 
 
 TEMPLATES = [
