@@ -10,7 +10,7 @@
 
     <title>Best digital marketing company in Delhi NCR - Coden.Live</title>
 
-    <meta name="description" content="Best Digital marketing company in Delhi NCR. Digital marketing experts for all Online Marketing Services ✔SEO ✔SMO ✔PPC." />
+    <meta name="description" content="Best Digital marketing company in Delhi NCR. Digital marketing experts for all Online Marketing Services ✔SEO ✔SMO ✔PPC ✔Web dev ✔App dev." />
 
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta property="og:locale" content="en_US" />
@@ -76,16 +76,11 @@
                             </li> -->
                         <li class="nav-item"><a class="nav-link" style="font-weight: bolder;" href="{% host_url 'compiler' host 'www' %}">Compiler</a></li>
                         <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-weight: bolder;" href="#">Get Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-weight: bolder;" href="#">Contact Us</a></li>
 
                     </ul>
-                    {% if user.is_authenticated %}
 
-                    <span class="navbar-text"><a class="login">{{ user.first_name }} {{ user.last_name }}</a></span>
 
-                    <a class="btn btn-light action-button" role="button" href="{% host_url 'logout' host 'www' %}"> Logout</a> {% else %}
-                    <span class="navbar-text"><a class="login" href="{% host_url 'login' host 'www' %}">Login</a></span>
-
-                    <a class="btn btn-light action-button" role="button" href="{% host_url 'register' host 'www' %}">Sign Up</a> {% endif %}
                 </div>
             </div>
         </nav>
