@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'landing.apps.LandingConfig',
     'courses.apps.CoursesConfig',
     'accounts.apps.AccountsConfig',
+    'services.apps.ServicesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

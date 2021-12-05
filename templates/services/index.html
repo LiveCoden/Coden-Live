@@ -7,17 +7,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <!-- on scroll animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
 
     <title>Best digital marketing company in Delhi NCR - Coden.Live</title>
 
@@ -33,86 +22,35 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Best digital marketing agency in Delhi NCR - Coden.Live" />
     <meta name="twitter:description" content="Best Digital marketing company in Delhi NCR. Digital marketing experts for all Online Marketing Services ✔SEO ✔SMO ✔PPC. We also create fast and secure websites." />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
-
-    <!-- <link rel="stylesheet" href="{% static 'css/dh-header-non-rectangular.css' %}"> -->
-
-
-    <link rel="stylesheet" href="{% static 'css/Header-Dark.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"> -->
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"> -->
-
-
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- on scroll animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Header-Dark.css' %}">
+
+
+
+
+    <!-- <link rel="stylesheet" href="{% static 'css/services.css' %}"> -->
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init();
-        })
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
-                nav: false,
-                dots: true,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                margin: 20,
-                slideSpeed: 3000,
-                animateIn: 'fadeIn',
-                animateOut: 'fadeOut',
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    960: {
-                        items: 3
-                    }
-                }
-            });
 
 
 
-
-            var setMinHeight = function(minheight = 0) {
-                jQuery('.owl-carousel').each(function(i, e) {
-                    var oldminheight = minheight;
-                    jQuery(e).find('.owl-item').each(function(i, e) {
-                        minheight = jQuery(e).height() > minheight ? jQuery(e).height() : minheight;
-                    });
-                    jQuery(e).find('.item').css("min-height", minheight + "px");
-                    minheight = oldminheight;
-                });
-            };
-
-            setMinHeight();
-        });
-
-        $(document).on('resize', function() {
-            setMinHeight();
-        });
-    </script>
 
 </head>
 
@@ -140,15 +78,6 @@
                         <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-weight: bolder;" href="#">Get Demo</a></li>
 
                     </ul>
-                    <div class="me-auto">
-                        <div style="width: 300px !important;">
-                            <div class="gcse-search"> </div>
-
-                        </div>
-
-
-                    </div>
-
                     {% if user.is_authenticated %}
 
                     <span class="navbar-text"><a class="login">{{ user.first_name }} {{ user.last_name }}</a></span>
@@ -169,19 +98,20 @@
         <!-- service header -->
         <div class="row services-header justify-content-center align-items-center  text-center d-flex">
             <div class=" col-12 mt-sm-4 mt-lg-0 col-sm-7  justify-content-center align-items-start text-start">
-                <h3 class="mt-lg-5 services-header-title fw-bold">
-                    A One-stop solution for all online business problems
-                </h3>
-                <h1 class="mt-4 services-header-p col-12 px-2 px-sm-0 col-sm-7 ">
-                    <i>We are a Digital Marketing Company in India providing fusion of all the right services for all your right business growth. 
-                            <br> <br>
-                            <b >WE CODE YOUR IDEAS INTO REALITY</b>
-                        </i>
+                <h1 class="mt-lg-5 services-header-title fw-bold">
+                    <!-- A One-stop solution for all online business problems -->
+                    Best Digital Marketing Company in Delhi
                 </h1>
+                <p class="h2 mt-4 services-header-p col-12 px-2 px-sm-0 col-sm-7 ">
+                    <i>We are a One-Stop solution for all online business problems providing fusion of all the right services for all your right business growth. 
+                            <br> <br>
+                            <b>WE CODE YOUR IDEAS INTO REALITY</b>
+                        </i>
+                </p>
 
             </div>
             <div class="col-5 col-sm-4 col-md-4 me-2 service_header_vec-top">
-                <img src="{% static 'img/gif2.gif' %}" class="service_header_vec" width="380" height="380" style="transform:scaleX(-1)">
+                <img src="{% static 'img/gif2.gif' %}" alt="best digital marketing company in delhi ncr" class="service_header_vec" width="380" height="380" style="transform:scaleX(-1)">
 
             </div>
         </div>
@@ -195,8 +125,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section_title_all text-center">
-                            <h3 class=" text-dark service-about-heading " id="services-wlcm-abt-header">Welcome To <span class="text_custom " style="color: #2C5364;">Coden
-                                    Live</span></h3>
+                            <h2 class="text-dark service-about-heading " id="services-wlcm-abt-header">Welcome To <span class="text_custom " style="color: #2C5364;">Coden
+                                    Live</span></h2>
 
                             <div class="">
                                 <i class=""></i>
@@ -208,7 +138,7 @@
                 <div class="row vertical_content_manage mt-5">
                     <div class="col-lg-6">
                         <div class="about_header_main mt-3">
-                            <h5 class="about_heading text-capitalize fw-bold mt-4">About Us</h4>
+                            <p class="about_heading text-capitalize fw-bold mt-4">About Us</h4>
                                 <p class="text-dark mt-3" style="font-size: large;">
                                     We are the best digital marketing agency in Delhi NCR offering cutting-edge solutions to make your business stand out online. We are a team of young, vibrant and passionate developers who do not just give in the best solutions but also help build a better
                                     tomorrow for you and your business.
@@ -226,7 +156,7 @@
                     </div>
                     <div class="col-lg-6 my-lg-5 ">
                         <div class="img_about mt-3">
-                            <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+                            <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="coden live-best digital marketing company in delhi ncr" class="img-fluid mx-auto d-block">
                         </div>
                     </div>
                 </div>
@@ -239,8 +169,8 @@
                                 <div class="circle text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px;height: 80px; background-color: #2C5364">
                                     <i class="fas fa-lightbulb-on fa-3x services-abt-icon-1"></i>
                                 </div>
-                                <h5 class="text-dark fw-bold text-capitalize mt-3 font-weight-bold">Innovative Solutions
-                                </h5>
+                                <p class="h5 text-dark fw-bold text-capitalize mt-3 font-weight-bold">Innovative Solutions
+                                </p>
                                 <!-- <p class="edu_desc mt-3 mb-0 text-dark">Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. </p> -->
                             </div>
@@ -253,8 +183,8 @@
                                 <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px;height: 80px; background-color: #2C5364">
                                     <i class="far fa-dollar-sign fa-3x services-abt-icon-2"></i>
                                 </div>
-                                <h5 class="text-dark fw-bold text-capitalize mt-3 font-weight-bold">Cost Effective
-                                </h5>
+                                <p class="h5 text-dark fw-bold text-capitalize mt-3 font-weight-bold">Cost Effective
+                                </p>
                                 <!-- <p class="edu_desc mb-0 mt-3 text-dark">Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. </p> -->
                             </div>
@@ -267,8 +197,8 @@
                                 <div class="circle  text-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px;height: 80px; background-color: #2C5364">
                                     <i class="fas fa-bolt fa-3x services-abt-icon-3"></i>
                                 </div>
-                                <h5 class="text-dark fw-bold text-capitalize mt-3 font-weight-bold">High Performance
-                                </h5>
+                                <p class="h5 text-dark fw-bold text-capitalize mt-3 font-weight-bold">High Performance
+                                </p>
                                 <!-- <p class="edu_desc mb-0 mt-3 text-dark">Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. </p> -->
                             </div>
@@ -283,7 +213,7 @@
     <div class="services my-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <h3 class=" mb-5 text-dark service-about-heading " id="services-wlcm-abt-header">Our<span class="text_custom " style="color: #2C5364;"> Services</span></h3>
+                <p class=" mb-5 text-dark service-about-heading " id="services-wlcm-abt-header">Our<span class="text_custom " style="color: #2C5364;"> Services</span></p>
                 <div class="col-md-6 col-lg-4 mb-3 services-card">
                     <div class="box p-5">
                         <i class="fas fa-laptop-code fa-3x mb-4"></i>
@@ -344,7 +274,7 @@
         <section id="steps">
             <div class="text-center mb-5">
 
-                <h3 class=" text-dark service-about-heading " id="services-wlcm-abt-header">Let's Grow <span class="text_custom " style="color: #2C5364;">Your Business!</span></h3>
+                <p class=" text-dark service-about-heading " id="services-wlcm-abt-header">Let's Grow <span class="text_custom " style="color: #2C5364;">Your Business!</span></p>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-3">
@@ -421,7 +351,7 @@
         <section class="testimonials-wrapper ">
             <div class="container ">
                 <div class="text-center ">
-                    <h3 class="font-weight-bold text-dark service-about-heading ">What our <span class="text_custom " style="color: #2C5364; ">Clients Say?</span></h3>
+                    <p class="font-weight-bold text-dark service-about-heading ">What our <span class="text_custom " style="color: #2C5364; ">Clients Say?</span></p>
                 </div>
                 <!-- <div class="separator "></div> -->
             </div>
@@ -430,7 +360,7 @@
                 <!--Testimonial Block-->
                 <div class="testimonial-block ">
                     <div class="inner-box " style="min-height: 390px; ">
-                        <div class="image "> <img src="https://i.ibb.co/jDxHfwJ/Clients-Says2.png " alt=" " /> </div>
+                        <div class="image "> <img src="https://i.ibb.co/jDxHfwJ/Clients-Says2.png " alt="" /> </div>
                         <div class="content ">
                             <i class="fas fa-quote-right "></i>
                             <div class="author-info ">Lorem Ipsum <span>/ Managerment at Lorem Ipsum</span></div>
@@ -471,7 +401,7 @@
     <section>
         <div class="row py-5 px-4 px-sm-4 px-md-0 animated text-white ">
             <div class="h1 col-12 animated-1 col-sm-12 col-md-6 why-diff-heading ">
-                <span data-aos="fade-up " data-aos-delay="300 " class=" why-diff-span ">WHY </span>
+                <span data-aos="fade-up " data-aos-delay="300 " class=" why-diff-span ">HOW </span>
                 <span data-aos="fade-up " data-aos-delay="500 " class=" why-diff-span ">ARE WE </span>
                 <span data-aos="fade-up " data-aos-delay="700 " class=" why-diff-span "> DIFFERENT?</span>
             </div>
@@ -494,7 +424,7 @@
     <div class="container my-5 ">
         <section>
             <div class="text-center mb-5 col-md-10 mx-auto ">
-                <h3 class="font-weight-bold text-dark service-about-heading ">WE <span class="text_custom " style="color: #2C5364; ">ARE...</span></h3>
+                <p class="font-weight-bold text-dark service-about-heading ">WE <span class="text_custom " style="color: #2C5364; ">ARE...</span></p>
                 <p class="mx-5 text-secondary fw-bold ">A company that knows about online outreach, can provide cost-effective solutions, and can create ground-breaking strategies designed to push you ahead of your competition.</p>
 
             </div>
@@ -506,7 +436,7 @@
                             <i class="fas fa-fingerprint fa-3x " style="color: #2C5364; "></i>
                         </div>
                         <div class="px-3 text-center pb-3 ">
-                            <h5 class="text-uppercase " style="font-weight: 600 ">Unique </h5>
+                            <p class="h5 text-uppercase " style="font-weight: 600 ">Unique </p>
                             <p class="font-weight-light my-3 ">Innovative marketing ideas for your targeted audience, personalized content creation and execution.</p>
                         </div>
                     </div>
@@ -520,7 +450,7 @@
 
                         </div>
                         <div class="px-3 text-center pb-3 ">
-                            <h5 class="text-uppercase " style="font-weight: 600 ">Affordable</h5>
+                            <p class="h5 text-uppercase " style="font-weight: 600 ">Affordable</p>
                             <p class="font-weight-light my-3 ">Our team of professionals will find the best and inexpensive solution for your business at an affordable price</p>
                         </div>
                     </div>
@@ -534,7 +464,7 @@
 
                         </div>
                         <div class="px-3 text-center pb-3 ">
-                            <h5 class="text-uppercase " style="font-weight: 600 ">Resourceful</h5>
+                            <p class="h5 text-uppercase " style="font-weight: 600 ">Resourceful</p>
                             <p class="font-weight-light my-3 "> Your marketing will be matched to its ideal audience, creating an open channel with higher touch points.</p>
                         </div>
                     </div>
@@ -549,7 +479,7 @@
     <section>
         <div class="row pb-5 pt-3 px-4 px-sm-4 px-md-0 animated text-white ">
             <div class="h1 col-12 animated-1 col-sm-12 col-md-12 why-diff-heading mb-4 " style="text-align: center; ">
-                <span data-aos="fade-up " data-aos-delay="300 " class=" why-diff-span ">WHY US? </span>
+                <span data-aos="fade-up " data-aos-duration="500" data-aos-delay="400" class=" why-diff-span ">WHY US? </span>
                 <!-- <span data-aos="fade-up " data-aos-delay="500 " class=" why-diff-span ">YOU SHOULD </span> -->
                 <!-- <span data-aos="fade-up " data-aos-delay="700 " class=" why-diff-span " >  US?</span> -->
             </div>
@@ -576,7 +506,7 @@
             <div class=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between ">
 
                 <div class="text-center ">
-                    <h3 class="font-weight-bold text-dark service-about-heading ">Frequently Asked <span class="text_custom " style="color: #2C5364; ">Questions</span></h3>
+                    <p class="font-weight-bold text-dark service-about-heading ">Frequently Asked <span class="text_custom " style="color: #2C5364; ">Questions</span></p>
                 </div>
 
                 <div class="mt-20 ">
@@ -593,7 +523,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-left " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-left" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-gray-700 text-sm ">The short answer is yes! With the popularity of the internet, everyday there are more consumers who choose to shop on-line first. Whether just doing research or actually purchasing on-line, your business will benefit
                                         by having a web page. Businesses without an internet presence waste up too much of their revenues on missed sales. And still think you don't need one? Get email addresses for your current customers and use the opt
@@ -617,7 +547,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-right " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-right" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-gray-700 text-sm ">With a click of a mouse, a post on social media, or a tap on a mobile device, businesses can reach new customers on a global scale. This makes digital marketing powerful and effective. Every brand needs an online presence
                                         in order to survive in this day and age. You don't live under a rock, so you already know how important it is to be where your target audience is today.
@@ -640,7 +570,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-left " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-left" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-gray-700 text-sm ">Search Engine Optimization has a lot to offer both small and relatively well-established businesses. SEO helps establish a web presence by allowing ranking for various keywords and phrases that relate to the business'
                                         services or product offerings. This helps bring traffic to a site from "organic " sources such as Google, Bing or Yahoo, as opposed to traffic acquired from PPC advertising programs such as AdWords, which can be
@@ -664,7 +594,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-right " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-right" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-dark text-sm ">There is often confusion about the difference between local and organic search engine optimization (SEO). Local SEO optimizes your website to be more successful in local searches. Organic SEO works to increase your
                                         website's ranking in results for popular search terms. For example, organic SEO helps you show up if someone searches "coffee shop. " Local SEO works for searches like "coffee shops near me. " You can use both types
@@ -688,7 +618,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-left " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-left" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-dark text-sm ">Security is not always exciting, but it is necessary. Security is everywhere. Every time you access your bank account online or use your passport to go through airport security or use any form of payment over the internet,
                                         you are letting third parties take care of the details so you don't have to worry. While encryption and other security measures used in digital marketing can be complicated to understand, they're actually pretty
@@ -713,7 +643,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-right " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-right" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-dark text-sm ">There is often confusion about the difference between local and organic search engine optimization (SEO). Local SEO optimizes your website to be more successful in local searches. Organic SEO works to increase your
                                         website's ranking in results for popular search terms. For example, organic SEO helps you show up if someone searches "coffee shop. " Local SEO works for searches like "coffee shops near me. " You can use both types
@@ -737,7 +667,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-left " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-left" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-dark text-sm ">Built In-House, For In-House: It starts with a branding audit—our clients are surprised at the value we deliver here. Then we create your new website, and develop your social media presence. Once your brand is established,
                                         we grow it. By continuously implementing SEO best practices and listening to what our community is looking for, we help build lasting relationships with potential clients. Our team will work with you through every
@@ -761,7 +691,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-right " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-right" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-dark text-sm ">You want to track your website activity so you can tell if it’s doing what you want it to do. Is it converting more visitors into leads? Are they arriving at checkout? It only takes three steps to have a site that’s
                                         tracking anything and everything you could ever want to know about the most important asset you own - your website.
@@ -784,7 +714,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-row items-start " data-aos="slide-left " data-aos-duration="500 ">
+                            <div class="flex flex-row items-start " data-aos="slide-left" data-aos-duration="300" data-aos-delay="300">
                                 <div class="bg-white p-3 w-full flex items-center ">
                                     <p class="text-dark text-sm ">To continually grow and scale your business, you need to be in complete control of your marketing. This is where we come in. By outsourcing your marketing to a digital agency, you can work hand-in-hand with our team
                                         of SEO Expert and Social Media Experts who will ensure you get long term return on investment from each digital marketing campaign. You don’t have to worry about putting your digital marketing on autopilot. We know
@@ -813,7 +743,7 @@
     <!-- Our team section -->
     <div class="container ">
         <section class="our-team-section mb-5 ">
-            <h3 class="font-weight-bold text-dark service-about-heading ">Our <span class="text_custom " style="color: #2C5364; ">Team</span></h3>
+            <p class="font-weight-bold text-dark service-about-heading ">Our <span class="text_custom " style="color: #2C5364; ">Team</span></p>
 
             <div class="container mt-3 ">
                 <div class="row ">
@@ -823,7 +753,7 @@
                                 <img src="https://i.ibb.co/8x9xK4H/team.jpg ">
                             </div>
                             <div class="team-content ">
-                                <h3 class="title ">Arshdeep Singh</h3>
+                                <p class="title ">Arshdeep Singh</p>
                                 <span class="post fw-bold ">Digital Marketing Head</span>
                             </div>
                             <ul class="social ">
@@ -849,7 +779,7 @@
                                 <img src="https://i.ibb.co/8x9xK4H/team.jpg ">
                             </div>
                             <div class="team-content ">
-                                <h3 class="title ">Chetan Khanna</h3>
+                                <p class="title ">Chetan Khanna</p>
                                 <span class="post fw-bold ">Senior App Developer</span>
                             </div>
                             <ul class="social ">
@@ -874,7 +804,7 @@
                                 <img src="https://i.ibb.co/8x9xK4H/team.jpg ">
                             </div>
                             <div class="team-content ">
-                                <h3 class="title ">Maninder Kaur</h3>
+                                <p class="title ">Maninder Kaur</p>
                                 <span class="post fw-bold ">Senior Web Developer </span>
                             </div>
                             <ul class="social ">
@@ -900,7 +830,7 @@
                                 <img src="https://i.ibb.co/8x9xK4H/team.jpg ">
                             </div>
                             <div class="team-content ">
-                                <h3 class="title ">Sanchay Singh</h3>
+                                <p class="title ">Sanchay Singh</p>
                                 <span class="post fw-bold ">Cyber Security Head</span>
                             </div>
                             <ul class="social ">
@@ -935,22 +865,23 @@
                 <div class="form-container d-flex justify-content-center ">
                     <div class="left-container d-lg-flex d-none ">
                         <div class="left-inner-container ">
-                            <h1 class="h2-form ">Let's Chat</h1>
-                            <h5>Whether you have a question, want to start a project or simply want to connect.</p>
-                                <br>
-                                <h5>Feel free to send us a message in the contact form</h5>
+                            <!-- <h1 class="h2-form ">Let's Chat</h1> -->
+                            <p class="h2-form">Let's Chat</p>
+                            <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                            <br>
+                            <p>Feel free to send us a message in the contact form</p>
                         </div>
                     </div>
                     <div class="right-container ">
                         <div class="right-inner-container ">
-                            <form method="post " action="{% url 'contact_post' %} ">
+                            <form method="post" action="{% url 'contact_post' %}">
                                 {% csrf_token %}
                                 <h2 class="lg-view display-5 msg ">Contact Us</h2>
                                 <h2 class="sm-view display-5 msg ">Let's Chat</h2>
-                                <input type="text " placeholder="Name * " name="name " class="services-contact-input text-3xl text-black-50 my-2 " />
-                                <input type="email " placeholder="Email * " name="email " class="services-contact-input text-3xl text-black-50 my-2 " />
-                                <input type="phone " placeholder="Phone " name="phone " class="services-contact-input text-3xl text-black-50 my-2 " />
-                                <textarea rows="4 " placeholder="Message " name="message " class="services-contact-input text-3xl text-black-50 my-2 "></textarea>
+                                <input type="text " placeholder="Name * " name="name" class="services-contact-input text-3xl text-black-50 my-2 " />
+                                <input type="email " placeholder="Email * " name="email" class="services-contact-input text-3xl text-black-50 my-2 " />
+                                <input type="phone " placeholder="Phone " name="phone" class="services-contact-input text-3xl text-black-50 my-2 " />
+                                <textarea rows="4 " placeholder="Message " name="message" class="services-contact-input text-3xl text-black-50 my-2 "></textarea>
                                 <button class="button-form btn btn-lg mt-3 p-2 ">Send Message</button>
                             </form>
                         </div>
@@ -967,7 +898,7 @@
         <div class="container ">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-6 col-md-3 item ">
-                    <h3>Services</h3>
+                    <p class="h5">Services</p>
                     <ul>
                         <li><a href="{% host_url 'courses' host 'www' %} ">Courses</a></li>
                         <li> <a {% if user.is_authenticated %} href="livecoden@gmail.com " {% else %} href="{% host_url 'login' host 'www' %} " {% endif %}> QnA</a></li>
@@ -975,7 +906,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-3 item ">
-                    <h3>About</h3>
+                    <p class="h5">About</p>
                     <ul>
                         <li><a href="# ">Company</a></li>
                         <li><a href="# ">Team</a></li>
@@ -983,7 +914,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6 item text ">
-                    <h3>Coden Live</h3>
+                    <p class="h5 mb-2">Coden Live</p>
                     <p style="font-size:larger; ">Coden Live is the leading Digital Marketing Agency in Delhi, and help businesses leverage the full potential of digital marketing. We bring to table a blend of advanced expertise and innovative thinking for your digital marketing journey.<br><br></p>
                 </div>
                 <div class="col item social ">
@@ -997,8 +928,89 @@
     </footer>
 
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script>
-        let offset = $("#services-wlcm-abt-header ").offset().top
+        if (window.innerWidth < 768) {
+            [].slice.call(document.querySelectorAll('[data-bss-disabled-mobile]')).forEach(function(elem) {
+                elem.classList.remove('animated');
+                elem.removeAttribute('data-bss-hover-animate');
+                elem.removeAttribute('data-aos');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+
+            var hoverAnimationTriggerList = [].slice.call(document.querySelectorAll('[data-bss-hover-animate]'));
+            var hoverAnimationList = hoverAnimationTriggerList.forEach(function(hoverAnimationEl) {
+                hoverAnimationEl.addEventListener('mouseenter', function(e) {
+                    e.target.classList.add('animated', e.target.dataset.bssHoverAnimate)
+                });
+                hoverAnimationEl.addEventListener('mouseleave', function(e) {
+                    e.target.classList.remove('animated', e.target.dataset.bssHoverAnimate)
+                });
+            });
+        }, false);
+
+        setTimeout(function() {
+            $('#message').fadeOut('slow');
+        }, 3000);
+
+
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                nav: false,
+                dots: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                margin: 20,
+                slideSpeed: 3000,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    960: {
+                        items: 3
+                    }
+                }
+            });
+
+
+
+
+            var setMinHeight = function(minheight = 0) {
+                jQuery('.owl-carousel').each(function(i, e) {
+                    var oldminheight = minheight;
+                    jQuery(e).find('.owl-item').each(function(i, e) {
+                        minheight = jQuery(e).height() > minheight ? jQuery(e).height() : minheight;
+                    });
+                    jQuery(e).find('.item').css("min-height", minheight + "px");
+                    minheight = oldminheight;
+                });
+            };
+
+            setMinHeight();
+        });
+
+        $(document).on('resize', function() {
+            setMinHeight();
+        });
+    </script>
+
+    <script>
+        let offset = $("#services-wlcm-abt-header").offset().top
         $(window).scroll(() => {
             if (window.pageYOffset > offset - 200) {
                 // console.log('mmmm')
@@ -1009,9 +1021,6 @@
         })
     </script>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 
 </body>
 
