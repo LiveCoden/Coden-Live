@@ -45,7 +45,7 @@
 
 
     <!-- <link rel="stylesheet" href="{% static 'css/services.css' %}"> -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
     <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
 
 
@@ -872,7 +872,7 @@
                             <p>Feel free to send us a message in the contact form</p>
                         </div>
                     </div>
-                    <div class="right-container ">
+                    <div class="right-container">
                         <div class="right-inner-container ">
                             <form method="post" action="{% url 'contact_post' %}">
                                 {% csrf_token %}
