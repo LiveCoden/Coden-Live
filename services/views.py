@@ -31,4 +31,4 @@ def contact_post(request):
    return redirect('services_main')
 
 def robot(request):
-    return render(request,'robots.txt',content_type='text')    
+    return render(request,'services_robots.txt',content_type='text')    
