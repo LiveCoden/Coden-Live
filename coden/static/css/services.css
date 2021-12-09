@@ -593,6 +593,13 @@ details[open] .faq__summary:after {
     display: block;
 }
 
+@media screen and (max-width:1000px) {
+    .why-diff-heading {
+        font-size: 4rem;
+        margin-bottom: 15px;
+    }
+}
+
 @media screen and (max-width:760px) {
     .services-header-title {
         color: white;
@@ -1351,4 +1358,10 @@ svg.intro.go .text-stroke:nth-child(6) {
 
 .bg-btn-test {
     background-color: #2C5364;
+}
+
+@media only screen and (min-width:992px) and (max-width:1280px) {
+    .lets-frow-services-card {
+        min-height: 250px;
+    }
 }

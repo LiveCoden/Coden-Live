@@ -32,3 +32,6 @@ def contact_post(request):
 
 def robot(request):
     return render(request,'services_robots.txt',content_type='text')    
+
+
+
