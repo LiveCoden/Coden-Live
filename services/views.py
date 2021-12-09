@@ -25,7 +25,7 @@ def contact_post(request):
       except:
          print("error")   
 
-      services_form = ServicesForm(name=name, email=email, phone=phone)
+      services_form = ServicesForm(name=name, email=email, phone=phone, message=message)
       services_form.save()   
       
    return redirect('services_main')
