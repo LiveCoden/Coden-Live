@@ -39,7 +39,9 @@ body {
 }
 
 .services-header {
-    min-height: 600px;
+    /* min-height: 600px; */
+    min-height: max-content;
+    /* max-height: max-content; */
     /* border: 1px solid red !important; */
     /* background-attachment: fixed; */
     /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -600,6 +602,15 @@ details[open] .faq__summary:after {
     }
 }
 
+@media screen and (max-width:1200px) and (min-width:850px) {
+    .services-header-title {
+        color: white;
+        font-weight: bold;
+        font-size: 200%;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width:760px) {
     .services-header-title {
         color: white;
@@ -616,7 +627,6 @@ details[open] .faq__summary:after {
     .services-header {
         min-height: 10px;
         height: 400px;
-        border: 1px solid red !important;
         /* background-attachment: fixed; */
         /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
@@ -660,7 +670,6 @@ details[open] .faq__summary:after {
     }
     .services-header {
         height: 420px;
-        border: 1px solid red !important;
         /* background-attachment: fixed; */
         /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
