@@ -13,6 +13,9 @@ worksheet = sh.sheet1
 def index(request):
    return render(request, 'services/index.html')
 
+def services(request):
+   return redirect('services_main')    
+
 def contact_post(request):
    if request.method == 'POST':
       name = request.POST.get('name')
