@@ -346,7 +346,7 @@ background: #1c2541; */
 }
 
 .wappicon {
-    animation: MoveUpDown 0.001s linear infinite;
+    animation: MoveUpDown 0.8s linear infinite;
 }
 
 @keyframes MoveUpDown {
@@ -356,8 +356,8 @@ background: #1c2541; */
         right: 20px;
     }
     50% {
-        bottom: 300px;
-        right: 300px;
+        bottom: 30px;
+        right: 30px;
     }
 }
 
