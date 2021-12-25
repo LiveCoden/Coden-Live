@@ -8,7 +8,7 @@ class Post(models.Model):
         User, on_delete=models.CASCADE, related_name='blog_posts')
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
-    body = models.TextField(blank=True)
+    body = models.TextField()
 
 
     class Meta:

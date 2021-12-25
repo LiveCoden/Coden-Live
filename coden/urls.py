@@ -31,7 +31,6 @@ urlpatterns = [
     path('courses/', include('courses.urls')),
     path('admin/', admin.site.urls), 
     path('blogs/', include("blogs.urls")),
-    path('tinymce/',include('tinymce.urls')),
      path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
      name='django.contrib.sitemaps.views.sitemap'),
     path('sitemaps.xml', sitemap, {'sitemaps': sitemaps},
