@@ -16,6 +16,13 @@ def index(request):
 def services(request):
    return redirect('services_main')    
 
+
+def response_error_handler(request, exception=None):
+    return HttpResponse("ll")
+
+handler404 = response_error_handler
+
+
 def contact_post(request):
    if request.method == 'POST':
       name = request.POST.get('name')

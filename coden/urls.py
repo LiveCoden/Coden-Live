@@ -29,9 +29,12 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('landing.urls',),),
     path('courses/', include('courses.urls')),
-    path('dencod/', admin.site.urls), 
+    path('admin/', admin.site.urls), 
+    path('blogs/', include("blogs.urls")),
+    path('tinymce/',include('tinymce.urls')),
      path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
      name='django.contrib.sitemaps.views.sitemap'),
     path('sitemaps.xml', sitemap, {'sitemaps': sitemaps},
-     name='django.contrib.sitemaps.views.sitemap')
+     name='django.contrib.sitemaps.views.sitemap'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

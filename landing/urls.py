@@ -10,4 +10,5 @@ urlpatterns = [
                 path('get', views.script_get, name='get'),
 
 
+
 ]
