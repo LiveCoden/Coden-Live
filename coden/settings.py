@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'django_hosts',
     'blogs.apps.BlogsConfig',
+    'ckeditor'
 
 ]
 
