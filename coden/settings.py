@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'django_hosts',
     'blogs.apps.BlogsConfig',
+    'django_summernote'
 
 ]
 
@@ -182,4 +183,7 @@ except ImportError:
     pass
 
 
+
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 

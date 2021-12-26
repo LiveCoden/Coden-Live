@@ -35,5 +35,7 @@ urlpatterns = [
      name='django.contrib.sitemaps.views.sitemap'),
     path('sitemaps.xml', sitemap, {'sitemaps': sitemaps},
      name='django.contrib.sitemaps.views.sitemap'),
+         path('summernote/', include('django_summernote.urls')),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

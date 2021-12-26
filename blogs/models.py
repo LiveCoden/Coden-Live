@@ -9,6 +9,8 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
     body = models.TextField(blank=True)
+    content = models.TextField(blank=True)
+
 
 
     class Meta:
